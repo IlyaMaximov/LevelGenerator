@@ -13,7 +13,7 @@ public:
             const std::vector<TextureName>& landscapes = {}) :
         pos_(pos),
         size_(sizes),
-        landscape_cnt_(landscapes.size()),
+        landscape_cnt_(landscapes.size() + 1),
         tex_manager_(tex_manager),
         click_manager_(click_manager) {
 
@@ -27,8 +27,11 @@ public:
         for (size_t i = 0; i < landscapes.size(); ++i) {
             sf::Vector2f button_pos = {pos_.x + (shift + button_size.width) * i + shift, pos_.y + size_.y / 2};
             landscape_buttons_.emplace_back(button_pos, sf::Vector2f(button_size.width, button_size.height),
-                    tex_manager_, landscapes[i]);
+                                            tex_manager_, landscapes[i]);
         }
+        sf::Vector2f button_pos = {pos_.x + (shift + button_size.width) * landscapes.size() + shift, pos_.y + size_.y / 2};
+        landscape_buttons_.emplace_back(button_pos, sf::Vector2f(button_size.width, button_size.height),
+                                        tex_manager_, TextureName::Emptiness);
         for (auto& button : landscape_buttons_) {
             click_manager_->addButton(&button);
         }

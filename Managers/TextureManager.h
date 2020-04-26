@@ -27,6 +27,8 @@ public:
         for (auto& [texture_name, rect]: data) {
             data_.emplace_back(texture_name, rect, file);
         }
+        sf::IntRect rect(data_.size() * data_[0].borders.width, 0, 0, 0);
+        data_.emplace_back(TextureName::Emptiness, rect, file);
     }
 
     TextureManager(const TextureManager&) = delete;

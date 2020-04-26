@@ -15,7 +15,7 @@ class Button : public sf::Drawable, public sf::Transformable {
 public:
 
     explicit Button(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
-        TextureName texture = TextureName::Emptiness, const sf::Color& color = sf::Color());
+        TextureName texture = TextureName::Emptiness, const sf::Color& color = sf::Color::White);
 
     sf::Vector2f getPos() const;
     sf::Vector2f getSize() const;
@@ -46,7 +46,7 @@ protected:
 class LandscapeButton : public Button {
 public:
     explicit LandscapeButton(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager, TextureName texture) :
-        Button(pos, sizes, manager, texture, sf::Color()) {
+        Button(pos, sizes, manager, texture) {
             setStatus(ButtonStatus::Deactivated);
     };
 
@@ -61,8 +61,8 @@ private:
 class SaveButton : public Button {
 public:
     explicit SaveButton(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
-            sf::Color color = sf::Color(), TextureName texture = TextureName::Emptiness):
-        Button(pos, sizes, manager, texture,color) {
+            sf::Color color = sf::Color::White, TextureName texture = TextureName::Emptiness):
+        Button(pos, sizes, manager, texture, color) {
         setName("Save Current Map");
     };
 
@@ -72,7 +72,7 @@ public:
 class OpenButton : public Button {
 public:
     explicit OpenButton(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
-            sf::Color color = sf::Color(), TextureName texture = TextureName::Emptiness):
+            sf::Color color = sf::Color::White, TextureName texture = TextureName::Emptiness):
         Button(pos, sizes, manager, texture, color) {
         setName("Open New Map");
     };
@@ -83,7 +83,7 @@ public:
 class RunButton : public Button {
 public:
     explicit RunButton(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
-            sf::Color color = sf::Color(), TextureName texture = TextureName::Emptiness):
+            sf::Color color = sf::Color::White, TextureName texture = TextureName::Emptiness):
         Button(pos, sizes, manager, texture, color) {
         setName("Run");
     };

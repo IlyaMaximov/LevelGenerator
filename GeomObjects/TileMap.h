@@ -66,7 +66,7 @@ private:
         quad[0].texCoords = sf::Vector2f(tex_rect.left, tex_rect.top);
         quad[1].texCoords = sf::Vector2f(tex_rect.left + tex_rect.width, tex_rect.top);
         quad[2].texCoords = sf::Vector2f(tex_rect.left + tex_rect.width, tex_rect.top + tex_rect.height);
-        quad[3].texCoords = sf::Vector2f(tex_rect.left + tex_rect.width, tex_rect.top);
+        quad[3].texCoords = sf::Vector2f(tex_rect.left, tex_rect.top + tex_rect.height);
     }
 
     void drawBackground(sf::RenderTarget& target) const {
