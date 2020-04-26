@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/LevelGenerator.dir/main.cpp.o CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o  -o LevelGenerator  -lsfml-graphics -lsfml-window -lsfml-system 
