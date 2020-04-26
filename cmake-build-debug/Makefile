@@ -150,6 +150,33 @@ GeomObjects/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.s
 .PHONY : GeomObjects/Button.cpp.s
 
+GeomObjects/TileMap.o: GeomObjects/TileMap.cpp.o
+
+.PHONY : GeomObjects/TileMap.o
+
+# target to build an object file
+GeomObjects/TileMap.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o
+.PHONY : GeomObjects/TileMap.cpp.o
+
+GeomObjects/TileMap.i: GeomObjects/TileMap.cpp.i
+
+.PHONY : GeomObjects/TileMap.i
+
+# target to preprocess a source file
+GeomObjects/TileMap.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.i
+.PHONY : GeomObjects/TileMap.cpp.i
+
+GeomObjects/TileMap.s: GeomObjects/TileMap.cpp.s
+
+.PHONY : GeomObjects/TileMap.s
+
+# target to generate assembly for a file
+GeomObjects/TileMap.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.s
+.PHONY : GeomObjects/TileMap.cpp.s
+
 Managers/MouseStatus.o: Managers/MouseStatus.cpp.o
 
 .PHONY : Managers/MouseStatus.o
@@ -176,6 +203,33 @@ Managers/MouseStatus.s: Managers/MouseStatus.cpp.s
 Managers/MouseStatus.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.s
 .PHONY : Managers/MouseStatus.cpp.s
+
+WindowObjects/LevelGenerator.o: WindowObjects/LevelGenerator.cpp.o
+
+.PHONY : WindowObjects/LevelGenerator.o
+
+# target to build an object file
+WindowObjects/LevelGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o
+.PHONY : WindowObjects/LevelGenerator.cpp.o
+
+WindowObjects/LevelGenerator.i: WindowObjects/LevelGenerator.cpp.i
+
+.PHONY : WindowObjects/LevelGenerator.i
+
+# target to preprocess a source file
+WindowObjects/LevelGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.i
+.PHONY : WindowObjects/LevelGenerator.cpp.i
+
+WindowObjects/LevelGenerator.s: WindowObjects/LevelGenerator.cpp.s
+
+.PHONY : WindowObjects/LevelGenerator.s
+
+# target to generate assembly for a file
+WindowObjects/LevelGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.s
+.PHONY : WindowObjects/LevelGenerator.cpp.s
 
 main.o: main.cpp.o
 
@@ -216,9 +270,15 @@ help:
 	@echo "... GeomObjects/Button.o"
 	@echo "... GeomObjects/Button.i"
 	@echo "... GeomObjects/Button.s"
+	@echo "... GeomObjects/TileMap.o"
+	@echo "... GeomObjects/TileMap.i"
+	@echo "... GeomObjects/TileMap.s"
 	@echo "... Managers/MouseStatus.o"
 	@echo "... Managers/MouseStatus.i"
 	@echo "... Managers/MouseStatus.s"
+	@echo "... WindowObjects/LevelGenerator.o"
+	@echo "... WindowObjects/LevelGenerator.i"
+	@echo "... WindowObjects/LevelGenerator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

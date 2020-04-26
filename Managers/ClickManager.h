@@ -36,11 +36,24 @@ public:
     }
 
     void checkClick(sf::Event& event, const sf::Vector2f& scale) const {
-        sf::Vector2f pos = {static_cast<float>(event.mouseButton.x) / scale.x,
-                            static_cast<float>(event.mouseButton.y) / scale.y};
+        sf::Vector2f pos;
 
-        checkButtonClick(event, pos);
-        checkMapClick(event, pos);
+        if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+            pos = {static_cast<float>(event.mouseButton.x) / scale.x, static_cast<float>(event.mouseButton.y) / scale.y};
+            MouseStatus::setPressedStatus(true);
+        } else if (event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
+            pos = {static_cast<float>(event.mouseButton.x) / scale.x, static_cast<float>(event.mouseButton.y) / scale.y};
+            MouseStatus::setPressedStatus(false);
+        } else if (event.type == sf::Event::MouseMoved) {
+            pos = {static_cast<float>(event.mouseMove.x) / scale.x, static_cast<float>(event.mouseMove.y) / scale.y};
+        } else {
+            return;
+        }
+
+        if (MouseStatus::getPressedStatus()) {
+            checkButtonClick(event, pos);
+            checkMapClick(event, pos);
+        }
     }
 
 
@@ -62,7 +75,7 @@ private:
         }
         sf::FloatRect bounds(map_->getPos(), map_->getSize());
         if (bounds.contains(pos)) {
-            map_->Click(pos);
+            map_->click(pos);
         }
     }
 

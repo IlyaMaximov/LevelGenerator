@@ -96,10 +96,10 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
-		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h">
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>
-		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/LevelGenerator.h">
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.h">
@@ -112,6 +112,12 @@
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/main.cpp">

@@ -23,8 +23,17 @@ struct MouseStatus {
         landscape = button;
     }
 
+    static void setPressedStatus(bool is_pressed) {
+        is_pressed_ = is_pressed;
+    }
+
+    static bool getPressedStatus() {
+        return is_pressed_;
+    }
+
 private:
     static LandscapeButton* landscape;
+    static bool is_pressed_;
 };
 
 

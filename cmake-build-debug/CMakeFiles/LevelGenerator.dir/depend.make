@@ -3,22 +3,41 @@
 
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../GeomObjects/Button.cpp
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../GeomObjects/Button.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../GeomObjects/TileMap.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/TextureManager.h
 
+CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../GeomObjects/Button.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../GeomObjects/TileMap.cpp
+CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../GeomObjects/TileMap.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../Managers/MouseStatus.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../Managers/TextureManager.h
+
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../GeomObjects/Button.h
+CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../GeomObjects/TileMap.h
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/MouseStatus.cpp
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/TextureManager.h
+
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/Button.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/Minimap.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/Palette.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/TileMap.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../Managers/ClickManager.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../Managers/MouseStatus.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../Managers/SpaceManager.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../WindowObjects/LevelGenerator.cpp
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../WindowObjects/LevelGenerator.h
 
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/Minimap.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/Palette.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/TileMap.h
-CMakeFiles/LevelGenerator.dir/main.cpp.o: ../LevelGenerator.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/ClickManager.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/SpaceManager.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/LevelGenerator.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../main.cpp
 

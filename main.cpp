@@ -1,6 +1,5 @@
 #include <iostream>
-#include "LevelGenerator.h"
-#include "Managers/ClickManager.h"
+#include "WindowObjects/LevelGenerator.h"
 
 std::vector<std::pair<TextureName, sf::IntRect>> get_marking() {
     std::vector<std::pair<TextureName, sf::IntRect>> data(4);

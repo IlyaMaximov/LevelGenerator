@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "../Managers/TextureManager.h"
+#include "TileMap.h"
 #include <cassert>
 
 enum class ButtonStatus {
@@ -53,42 +54,51 @@ public:
     void click() override;
 
 private:
-    ButtonStatus status_ = ButtonStatus::Deactivated;
-
     void setStatus(ButtonStatus);
+
+    ButtonStatus status_ = ButtonStatus::Deactivated;
 };
 
 class SaveButton : public Button {
 public:
-    explicit SaveButton(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
-            sf::Color color = sf::Color::White, TextureName texture = TextureName::Emptiness):
-        Button(pos, sizes, manager, texture, color) {
+    explicit SaveButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
+        Button(pos, sizes, nullptr, TextureName::Emptiness, color),
+        map_(map) {
         setName("Save Current Map");
     };
 
     void click() override;
+
+private:
+    TileMap* map_ = nullptr;
 };
 
 class OpenButton : public Button {
 public:
-    explicit OpenButton(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
-            sf::Color color = sf::Color::White, TextureName texture = TextureName::Emptiness):
-        Button(pos, sizes, manager, texture, color) {
+    explicit OpenButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
+        Button(pos, sizes, nullptr, TextureName::Emptiness, color),
+        map_(map) {
         setName("Open New Map");
     };
 
     void click() override;
+
+private:
+    TileMap* map_ = nullptr;
 };
 
-class RunButton : public Button {
+class ClearButton : public Button {
 public:
-    explicit RunButton(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
-            sf::Color color = sf::Color::White, TextureName texture = TextureName::Emptiness):
-        Button(pos, sizes, manager, texture, color) {
-        setName("Run");
+    explicit ClearButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
+        Button(pos, sizes, nullptr, TextureName::Emptiness, color),
+        map_(map) {
+        setName("Clear Map");
     };
 
     void click() override;
+
+private:
+    TileMap* map_ = nullptr;
 };
 
 

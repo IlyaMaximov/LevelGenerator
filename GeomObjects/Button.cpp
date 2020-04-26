@@ -108,5 +108,6 @@ void SaveButton::click() {
 void OpenButton::click() {
 }
 
-void RunButton::click() {
+void ClearButton::click() {
+    map_->clear();
 }
