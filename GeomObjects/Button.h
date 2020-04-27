@@ -31,6 +31,7 @@ private:
     void setTexture(TextureName texture);
     void setDefaultTexture(sf::Color color);
     void alignName();
+    void fontSizeNormalize();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
 protected:

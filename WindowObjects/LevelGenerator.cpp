@@ -13,6 +13,9 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
     palette_(space_manager_.getPos(GeomObj::Palette), space_manager_.getSize(GeomObj::Palette),
              texture_manager_, &click_manager_, palette_landscapes) {
 
+        size_t x_centre = (static_cast<float>(sf::VideoMode::getDesktopMode().width) - size_.x) / 2;
+        size_t y_centre = (static_cast<float>(sf::VideoMode::getDesktopMode().height) - size_.y) / 2;
+        setPosition(sf::Vector2i(x_centre, y_centre));
 
         sf::Color button_color = sf::Color(135, 206, 250);
         Button* save_button = new SaveButton(space_manager_.getPos(GeomObj::SaveButton),

@@ -204,6 +204,33 @@ Managers/MouseStatus.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.s
 .PHONY : Managers/MouseStatus.cpp.s
 
+WindowObjects/DialogWindow.o: WindowObjects/DialogWindow.cpp.o
+
+.PHONY : WindowObjects/DialogWindow.o
+
+# target to build an object file
+WindowObjects/DialogWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o
+.PHONY : WindowObjects/DialogWindow.cpp.o
+
+WindowObjects/DialogWindow.i: WindowObjects/DialogWindow.cpp.i
+
+.PHONY : WindowObjects/DialogWindow.i
+
+# target to preprocess a source file
+WindowObjects/DialogWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.i
+.PHONY : WindowObjects/DialogWindow.cpp.i
+
+WindowObjects/DialogWindow.s: WindowObjects/DialogWindow.cpp.s
+
+.PHONY : WindowObjects/DialogWindow.s
+
+# target to generate assembly for a file
+WindowObjects/DialogWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.s
+.PHONY : WindowObjects/DialogWindow.cpp.s
+
 WindowObjects/LevelGenerator.o: WindowObjects/LevelGenerator.cpp.o
 
 .PHONY : WindowObjects/LevelGenerator.o
@@ -276,6 +303,9 @@ help:
 	@echo "... Managers/MouseStatus.o"
 	@echo "... Managers/MouseStatus.i"
 	@echo "... Managers/MouseStatus.s"
+	@echo "... WindowObjects/DialogWindow.o"
+	@echo "... WindowObjects/DialogWindow.i"
+	@echo "... WindowObjects/DialogWindow.s"
 	@echo "... WindowObjects/LevelGenerator.o"
 	@echo "... WindowObjects/LevelGenerator.i"
 	@echo "... WindowObjects/LevelGenerator.s"

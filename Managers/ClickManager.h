@@ -38,20 +38,20 @@ public:
     void checkClick(sf::Event& event, const sf::Vector2f& scale) const {
         sf::Vector2f pos;
 
-        if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+        if ((event.type == sf::Event::MouseButtonPressed || event.type == sf::Event::MouseButtonReleased)
+            && event.mouseButton.button == sf::Mouse::Left) {
             pos = {static_cast<float>(event.mouseButton.x) / scale.x, static_cast<float>(event.mouseButton.y) / scale.y};
-            MouseStatus::setPressedStatus(true);
-        } else if (event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
-            pos = {static_cast<float>(event.mouseButton.x) / scale.x, static_cast<float>(event.mouseButton.y) / scale.y};
-            MouseStatus::setPressedStatus(false);
+            MouseStatus::setPressedStatus(event.type == sf::Event::MouseButtonPressed);
         } else if (event.type == sf::Event::MouseMoved) {
             pos = {static_cast<float>(event.mouseMove.x) / scale.x, static_cast<float>(event.mouseMove.y) / scale.y};
         } else {
             return;
         }
 
-        if (MouseStatus::getPressedStatus()) {
+        if (event.type == sf::Event::MouseButtonPressed) {
             checkButtonClick(event, pos);
+        }
+        if (MouseStatus::getPressedStatus()) {
             checkMapClick(event, pos);
         }
     }

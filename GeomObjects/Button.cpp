@@ -49,6 +49,7 @@ TextureName Button::getTextureName() const {
 void Button::setName(const std::string &name) {
     name_.setString(name);
     alignName();
+    fontSizeNormalize();
 }
 
 void Button::setDefaultTexture(sf::Color color) {
@@ -66,6 +67,13 @@ void Button::alignName() {
     sf::Vector2f button_centre = sprite_.getPosition() +
                                  sf::Vector2f(sprite_.getSize().x / 2, sprite_.getSize().y / 2);
     name_.setPosition(button_centre);
+}
+
+void Button::fontSizeNormalize() {
+    float scale_aspect_x = 0.8f * (size_.x / name_.getLocalBounds().width);
+    float scale_aspect_y = 0.8f * (size_.y / name_.getLocalBounds().height);
+    float scale_aspect = std::min(scale_aspect_x, scale_aspect_y);
+    name_.setScale(scale_aspect, scale_aspect);
 }
 
 void Button::draw(sf::RenderTarget &target, sf::RenderStates states) const {

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o"
+  "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/main.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/main.cpp.o"
   )

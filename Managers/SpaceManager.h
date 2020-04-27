@@ -30,9 +30,9 @@ public:
         map_width_(((desktop_width_ - 4 * guard_width_) / 160) * 128),
         map_height_(((desktop_height_ - 3 * guard_height_) / 32) * 32),
         minimap_width_(desktop_width_ - map_width_ - 4 * guard_width_),
-        palette_height_((desktop_height_ - minimap_width_ - 5 * guard_height_) / 2),
-        guard_button_((desktop_height_ - minimap_width_ - 5 * guard_height_ - palette_height_) / 8),
-        button_height_((desktop_height_ - minimap_width_ - 5 * guard_height_ - palette_height_ - 3 * guard_button_) / 3) {};
+        palette_height_((map_height_ - minimap_width_ - 2 * guard_height_) / 2),
+        guard_button_((map_height_ - minimap_width_ - 2 * guard_height_ - palette_height_) / 8),
+        button_height_((map_height_ - minimap_width_ - 2 * guard_height_ - palette_height_ - 2 * guard_button_) / 3) {};
 
     [[nodiscard]] sf::Vector2f getPos(GeomObj obj) const {
         switch (obj) {

@@ -49,9 +49,10 @@ private:
         name_.setString("Color Palette");
         name_.setFont(font_);
         name_.setFillColor(sf::Color::Black);
-        name_.setCharacterSize(27);
+        name_.setCharacterSize(35);
         name_.setStyle(sf::Text::Italic);
         alignName();
+        fontSizeNormalize();
     }
 
     void alignName() {
@@ -60,6 +61,13 @@ private:
         name_.setOrigin(rect_centre);
         sf::Vector2f button_centre = pos_ + sf::Vector2f(size_.x / 2, size_.y / 6);
         name_.setPosition(button_centre);
+    }
+
+    void fontSizeNormalize() {
+        float scale_aspect_y = 0.8f * (size_.x / name_.getLocalBounds().width);
+        float scale_aspect_x = 0.8f * ((size_.y / 5) / name_.getLocalBounds().height);
+        float scale_aspect = std::min(scale_aspect_x, scale_aspect_y);
+        name_.setScale(scale_aspect, scale_aspect);
     }
 
     void drawBackground(sf::RenderTarget& target) const {

@@ -8,6 +8,6 @@ find_package(SFML 2.4.2 COMPONENTS graphics audio REQUIRED)
 add_executable(LevelGenerator main.cpp WindowObjects/LevelGenerator.h
         Managers/ClickManager.h Managers/SpaceManager.h
         GeomObjects/Button.cpp GeomObjects/Button.h GeomObjects/Minimap.h
-        GeomObjects/Palette.h GeomObjects/TileMap.h Managers/MouseStatus.h Managers/MouseStatus.cpp GeomObjects/TileMap.cpp WindowObjects/LevelGenerator.cpp)
+        GeomObjects/Palette.h GeomObjects/TileMap.h Managers/MouseStatus.h Managers/MouseStatus.cpp GeomObjects/TileMap.cpp WindowObjects/LevelGenerator.cpp WindowObjects/DialogWindow.cpp WindowObjects/DialogWindow.h GeomObjects/MessangeBox.h)
 
 target_link_libraries(LevelGenerator sfml-graphics sfml-window sfml-system)
