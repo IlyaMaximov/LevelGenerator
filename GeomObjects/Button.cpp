@@ -23,7 +23,7 @@ Button::Button(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager, Te
 void Button::nameConstructor() {
     name_.setFont(font_);
     name_.setFillColor(sf::Color::Black);
-    name_.setCharacterSize(30);
+    name_.setCharacterSize(25);
     name_.setStyle(sf::Text::Italic);
 }
 
@@ -40,6 +40,10 @@ sf::Vector2f Button::getPos() const {
 
 sf::Vector2f Button::getSize() const {
     return size_;
+}
+
+sf::FloatRect Button::getLocalBounds() const {
+    return sf::FloatRect(getPos(), getSize());
 }
 
 TextureName Button::getTextureName() const {
@@ -70,9 +74,9 @@ void Button::alignName() {
 }
 
 void Button::fontSizeNormalize() {
-    float scale_aspect_x = 0.8f * (size_.x / name_.getLocalBounds().width);
+    float scale_aspect_x = 0.9f * (size_.x / name_.getLocalBounds().width);
     float scale_aspect_y = 0.8f * (size_.y / name_.getLocalBounds().height);
-    float scale_aspect = std::min(scale_aspect_x, scale_aspect_y);
+    float scale_aspect = std::min(1.f, std::min(scale_aspect_x, scale_aspect_y));
     name_.setScale(scale_aspect, scale_aspect);
 }
 

@@ -19,11 +19,17 @@ CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/MouseStatu
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/TextureManager.h
 
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../GeomObjects/MessangeBox.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../GeomObjects/TileMap.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../Managers/ClickManager.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../Managers/MouseStatus.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../WindowObjects/DialogWindow.cpp
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../WindowObjects/DialogWindow.h
 
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/Button.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/MessangeBox.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/Minimap.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/Palette.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/TileMap.h

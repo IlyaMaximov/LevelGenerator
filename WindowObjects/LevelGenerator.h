@@ -30,6 +30,8 @@ public:
 
 private:
 
+    void alignWindow();
+
     sf::Vector2f size_;
     TextureManager* texture_manager_;
     SpaceManager space_manager_;

@@ -19,6 +19,10 @@ public:
         return sf::Vector2f(tile_size_.x * width_, tile_size_.y * height_);
     }
 
+    sf::FloatRect getLocalBounds() const {
+        return sf::FloatRect(getPos(), getSize());
+    }
+
     sf::Vector2u getTileSize() const {
         return tile_size_;
     }

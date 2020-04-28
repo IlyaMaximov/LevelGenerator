@@ -11,12 +11,9 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
          space_manager_.getSize(GeomObj::Map).y / 32,texture_manager_),
     minimap_(space_manager_.getPos(GeomObj::Minimap), space_manager_.getSize(GeomObj::Minimap), &map_),
     palette_(space_manager_.getPos(GeomObj::Palette), space_manager_.getSize(GeomObj::Palette),
-             texture_manager_, &click_manager_, palette_landscapes) {
+             texture_manager_, &click_manager_, this, palette_landscapes) {
 
-        size_t x_centre = (static_cast<float>(sf::VideoMode::getDesktopMode().width) - size_.x) / 2;
-        size_t y_centre = (static_cast<float>(sf::VideoMode::getDesktopMode().height) - size_.y) / 2;
-        setPosition(sf::Vector2i(x_centre, y_centre));
-
+        alignWindow();
         sf::Color button_color = sf::Color(135, 206, 250);
         Button* save_button = new SaveButton(space_manager_.getPos(GeomObj::SaveButton),
                                              space_manager_.getSize(GeomObj::SaveButton),
@@ -32,10 +29,16 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
 
         service_buttons_ = {save_button, open_button, clear_button};
 
-        click_manager_.addMap(&map_);
+        click_manager_.addMap(&map_, this);
         for (auto& button : service_buttons_) {
-            click_manager_.addButton(button);
+            click_manager_.addButton(button, this);
         }
+}
+
+void LevelGenerator::alignWindow() {
+    size_t x_centre = (static_cast<float>(sf::VideoMode::getDesktopMode().width) - size_.x) / 2;
+    size_t y_centre = (static_cast<float>(sf::VideoMode::getDesktopMode().height) - size_.y) / 2;
+    setPosition(sf::Vector2i(x_centre, y_centre));
 }
 
 void LevelGenerator::run()  {
@@ -46,7 +49,7 @@ void LevelGenerator::run()  {
             if (event.type == sf::Event::Closed)
                 close();
             sf::Vector2f scale = {getSize().x / size_.x, getSize().y / size_.y};
-            click_manager_.checkClick(event, scale);
+            click_manager_.checkEvents(event, scale, this);
         }
         clear(sf::Color(240, 240, 240));
 

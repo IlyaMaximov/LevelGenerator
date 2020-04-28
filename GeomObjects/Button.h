@@ -20,6 +20,7 @@ public:
 
     sf::Vector2f getPos() const;
     sf::Vector2f getSize() const;
+    sf::FloatRect getLocalBounds() const;
     TextureName getTextureName() const;
     void setName(const std::string& name);
     virtual void click() = 0;

@@ -10,12 +10,13 @@ class Palette : public sf::Drawable, public sf::Transformable {
 public:
 
     explicit Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* tex_manager, ClickManager* click_manager,
-            const std::vector<TextureName>& landscapes = {}) :
+            sf::RenderWindow* window_ptr, const std::vector<TextureName>& landscapes = {}) :
         pos_(pos),
         size_(sizes),
         landscape_cnt_(landscapes.size() + 1),
         tex_manager_(tex_manager),
-        click_manager_(click_manager) {
+        click_manager_(click_manager),
+        window_ptr_(window_ptr) {
 
         if (!font_.loadFromFile("arial.ttf")) {
             throw std::runtime_error("It is not possible to load the font");
@@ -33,7 +34,7 @@ public:
         landscape_buttons_.emplace_back(button_pos, sf::Vector2f(button_size.width, button_size.height),
                                         tex_manager_, TextureName::Emptiness);
         for (auto& button : landscape_buttons_) {
-            click_manager_->addButton(&button);
+            click_manager_->addButton(&button, window_ptr_);
         }
     }
 
@@ -49,7 +50,7 @@ private:
         name_.setString("Color Palette");
         name_.setFont(font_);
         name_.setFillColor(sf::Color::Black);
-        name_.setCharacterSize(35);
+        name_.setCharacterSize(25);
         name_.setStyle(sf::Text::Italic);
         alignName();
         fontSizeNormalize();
@@ -65,8 +66,8 @@ private:
 
     void fontSizeNormalize() {
         float scale_aspect_y = 0.8f * (size_.x / name_.getLocalBounds().width);
-        float scale_aspect_x = 0.8f * ((size_.y / 5) / name_.getLocalBounds().height);
-        float scale_aspect = std::min(scale_aspect_x, scale_aspect_y);
+        float scale_aspect_x = 0.9f * ((size_.y / 5) / name_.getLocalBounds().height);
+        float scale_aspect = std::min(1.f, std::min(scale_aspect_x, scale_aspect_y));
         name_.setScale(scale_aspect, scale_aspect);
     }
 
@@ -97,6 +98,7 @@ private:
     std::vector<LandscapeButton> landscape_buttons_;
     TextureManager* tex_manager_;
     ClickManager* click_manager_;
+    sf::RenderWindow* window_ptr_;
 };
 
 #endif

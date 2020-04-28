@@ -17,6 +17,8 @@ cassert
 -
 
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+iostream
+-
 
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.h
 TileMap.h
@@ -49,6 +51,8 @@ cassert
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
 ../GeomObjects/TileMap.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
+../GeomObjects/MessangeBox.h
+/home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
 MouseStatus.h
 /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
 
@@ -75,10 +79,10 @@ SFML/Graphics.hpp
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/SFML/Graphics.hpp
 ../GeomObjects/MessangeBox.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
-
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.cpp
-LevelGenerator.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
+../Managers/ClickManager.h
+/home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.h
+iostream
+-
 
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
 SFML/Graphics.hpp
