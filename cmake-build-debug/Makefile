@@ -420,6 +420,33 @@ WindowObjects/LevelGenerator.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.s
 .PHONY : WindowObjects/LevelGenerator.cpp.s
 
+WindowObjects/NotificationWindow.o: WindowObjects/NotificationWindow.cpp.o
+
+.PHONY : WindowObjects/NotificationWindow.o
+
+# target to build an object file
+WindowObjects/NotificationWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o
+.PHONY : WindowObjects/NotificationWindow.cpp.o
+
+WindowObjects/NotificationWindow.i: WindowObjects/NotificationWindow.cpp.i
+
+.PHONY : WindowObjects/NotificationWindow.i
+
+# target to preprocess a source file
+WindowObjects/NotificationWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.i
+.PHONY : WindowObjects/NotificationWindow.cpp.i
+
+WindowObjects/NotificationWindow.s: WindowObjects/NotificationWindow.cpp.s
+
+.PHONY : WindowObjects/NotificationWindow.s
+
+# target to generate assembly for a file
+WindowObjects/NotificationWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.s
+.PHONY : WindowObjects/NotificationWindow.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -489,6 +516,9 @@ help:
 	@echo "... WindowObjects/LevelGenerator.o"
 	@echo "... WindowObjects/LevelGenerator.i"
 	@echo "... WindowObjects/LevelGenerator.s"
+	@echo "... WindowObjects/NotificationWindow.o"
+	@echo "... WindowObjects/NotificationWindow.i"
+	@echo "... WindowObjects/NotificationWindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

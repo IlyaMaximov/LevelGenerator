@@ -1,6 +1,7 @@
 #include "Button.h"
 #include "../Managers/MouseStatus.h"
 #include "../WindowObjects/DialogWindow.h"
+#include "../WindowObjects/NotificationWindow.h"
 #include <fstream>
 
 Button::Button(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager, TextureName texture, const sf::Color& color) :
@@ -118,6 +119,7 @@ void LandscapeButton::click() {
 
 void SaveButton::click() {
     std::string file_name;
+    file_name.reserve(100);
     DialogWindow ask_window("What do you want to name this map?", &file_name, nullptr);
     ask_window.run();
     write_map(std::move(file_name));
@@ -125,14 +127,17 @@ void SaveButton::click() {
 
 void OpenButton::click() {
     std::string file_name;
-    DialogWindow window("What file do you want to open?", &file_name, nullptr);
-    window.run();
+    file_name.reserve(100);
+    DialogWindow ask_window("What file do you want to open?", &file_name, nullptr);
+    ask_window.run();
     read_map(std::move(file_name));
 }
 
 void ClearButton::click() {
     map_->clear();
 }
+
+///////////////////////////////////////////////////
 
 void SaveButton::write_map(std::string &&file_name) const {
     std::ofstream file_out(file_name);
@@ -146,20 +151,33 @@ void SaveButton::write_map(std::string &&file_name) const {
     file_out.close();
 }
 
+void OpenButton::read_error(std::string &&error_description, std::ifstream& file_in) {
+    NotificationWindow popup_window(std::move(error_description));
+    popup_window.run();
+    file_in.close();
+}
+
 void OpenButton::read_map(std::string &&file_name) const {
     sf::Vector2u map_size;
     std::ifstream file_in(file_name);
     if (!file_in.is_open()) {
-        throw std::runtime_error("Error open file");
+        read_error("This file doesn't exist", file_in);
+        return;
     }
+
     file_in >> map_size.x >> map_size.y;
-    /////////////////////////////////////////////////////////
     if (map_->getSizeInTiles() != map_size) {
-        throw std::runtime_error("Error map size");
+        read_error("Mismatch in map sizes", file_in);
+        return;
     }
-    ///////////////////////////////////////////////////
+
     std::vector<TextureName> map_info(map_size.x * map_size.y);
     for (size_t i = 0; i < map_size.x * map_size.y; ++i) {
+        if (file_in.eof() || file_in.bad()) {
+            read_error("Map's tiles reading error", file_in);
+            return;
+        }
+
         int texture_id;
         file_in >> texture_id;
         map_info[i] = static_cast<TextureName>(texture_id);

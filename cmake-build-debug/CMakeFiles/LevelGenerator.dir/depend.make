@@ -9,6 +9,7 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/ClickManager
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../WindowObjects/DialogWindow.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../WindowObjects/NotificationWindow.h
 
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: ../GeomObjects/MessangeBox.cpp
@@ -81,6 +82,9 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../Managers/Te
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../WindowObjects/LevelGenerator.cpp
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../WindowObjects/LevelGenerator.h
 
+CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o: ../WindowObjects/NotificationWindow.cpp
+CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o: ../WindowObjects/NotificationWindow.h
+
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/MessangeBox.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/Minimap.h
@@ -91,5 +95,6 @@ CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/SpaceManager.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/LevelGenerator.h
+CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/NotificationWindow.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../main.cpp
 

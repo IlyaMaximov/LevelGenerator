@@ -1,7 +1,8 @@
 #include "DialogWindow.h"
 
 DialogWindow::DialogWindow(std::string&& message, std::string* user_response, ClickManager *click_manager):
-        sf::RenderWindow(sf::VideoMode(600, 200),"Dialog window",sf::Style::Titlebar|sf::Style::Close),
+        sf::RenderWindow(sf::VideoMode(600, 200),"Dialog window",
+                sf::Style::Titlebar|sf::Style::Close, sf::ContextSettings(0, 0, 8)),
         size_(sf::Vector2u(600, 200)),
         init_click_manager_(click_manager == nullptr),
         click_manager_(init_click_manager_ ? new ClickManager() : click_manager),

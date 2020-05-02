@@ -1,5 +1,6 @@
 #include <iostream>
 #include "WindowObjects/LevelGenerator.h"
+#include "WindowObjects/NotificationWindow.h"
 
 std::vector<std::pair<TextureName, sf::IntRect>> get_marking() {
     std::vector<std::pair<TextureName, sf::IntRect>> data(4);
@@ -22,7 +23,7 @@ int main() {
         std::vector<TextureName>palette_landscapes
                 = {TextureName::Grass, TextureName::Tree, TextureName::Gravel, TextureName::River};
 
-        LevelGenerator generator(palette_landscapes, &texture_manager, window);
+        LevelGenerator generator(palette_landscapes, &texture_manager);
         generator.run();
     } catch (std::exception& e) {
         std::cout << e.what() << std::endl;

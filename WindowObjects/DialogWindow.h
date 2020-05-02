@@ -3,8 +3,6 @@
 
 #include "SFML/Graphics.hpp"
 #include "../Managers/ClickManager.h"
-#include <iostream>
-
 
 class DialogWindow : public sf::RenderWindow {
 public:
@@ -12,8 +10,8 @@ public:
 
     DialogWindow(const DialogWindow& ) = delete;
     DialogWindow(DialogWindow&& ) = delete;
-    DialogWindow& operator =(const DialogWindow& ) = delete;
-    DialogWindow& operator =(DialogWindow&& ) = delete;
+    DialogWindow& operator=(const DialogWindow& ) = delete;
+    DialogWindow& operator=(DialogWindow&& ) = delete;
     ~DialogWindow() override;
 
     void EnterPressed(MessageBox*);

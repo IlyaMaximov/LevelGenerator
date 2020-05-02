@@ -104,6 +104,7 @@ public:
     void click() override;
 
 private:
+    static void read_error(std::string&& error_description, std::ifstream&) ;
     void read_map(std::string&& file_name) const;
 
     TileMap* map_ = nullptr;

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o"
+  "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/main.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

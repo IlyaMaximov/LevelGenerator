@@ -90,9 +90,15 @@ SFML/Graphics.hpp
 ../GeomObjects/Minimap.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.h
 
+/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
+SFML/Graphics.hpp
+-
+
 /home/ilya/CLionProjects/LevelGenerator/main.cpp
 iostream
 -
 WindowObjects/LevelGenerator.h
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
+WindowObjects/NotificationWindow.h
+/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
 

@@ -150,6 +150,12 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/main.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>
