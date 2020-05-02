@@ -3,9 +3,6 @@
 
 #include "TileMap.h"
 
-#include <iostream>
-#include <cassert>
-
 class Minimap : public sf::Drawable, public sf::Transformable {
 public:
     explicit Minimap(sf::Vector2f pos, sf::Vector2f size, TileMap* map) :
@@ -15,30 +12,9 @@ public:
 
 private:
 
-    void draw_background(sf::RenderTarget& target) const {
-        sf::RectangleShape map_background(size_);
-        map_background.setPosition(pos_);
-        map_background.setFillColor(sf::Color::White);
-        map_background.setOutlineThickness(1);
-        map_background.setOutlineColor(sf::Color::Black);
-        target.draw(map_background);
-    }
-
-    void setMinimap(TileMap& minimap) const {
-        float x_compress = size_.x / map_->getSize().x;
-        float y_compress = size_.y / map_->getSize().y;
-        minimap.setScale(x_compress, y_compress);
-        sf::Vector2f shift(map_->getPos().x * x_compress, map_->getPos().y * y_compress);
-        minimap.move(pos_ - shift);
-    }
-
-    void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
-        states.transform *= getTransform();
-        TileMap minimap(*map_);
-        setMinimap(minimap);
-        draw_background(target);
-        target.draw(minimap, states);
-    }
+    void draw_background(sf::RenderTarget& target) const;
+    void setMinimap(TileMap& minimap) const;
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
     TileMap* map_;
     sf::Vector2f pos_;

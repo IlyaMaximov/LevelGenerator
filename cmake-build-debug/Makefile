@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/111/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/112/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/111/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/ilya/CLionProjects/LevelGenerator/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/111/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/112/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/111/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/112/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -150,6 +150,87 @@ GeomObjects/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.s
 .PHONY : GeomObjects/Button.cpp.s
 
+GeomObjects/MessangeBox.o: GeomObjects/MessangeBox.cpp.o
+
+.PHONY : GeomObjects/MessangeBox.o
+
+# target to build an object file
+GeomObjects/MessangeBox.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o
+.PHONY : GeomObjects/MessangeBox.cpp.o
+
+GeomObjects/MessangeBox.i: GeomObjects/MessangeBox.cpp.i
+
+.PHONY : GeomObjects/MessangeBox.i
+
+# target to preprocess a source file
+GeomObjects/MessangeBox.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.i
+.PHONY : GeomObjects/MessangeBox.cpp.i
+
+GeomObjects/MessangeBox.s: GeomObjects/MessangeBox.cpp.s
+
+.PHONY : GeomObjects/MessangeBox.s
+
+# target to generate assembly for a file
+GeomObjects/MessangeBox.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.s
+.PHONY : GeomObjects/MessangeBox.cpp.s
+
+GeomObjects/Minimap.o: GeomObjects/Minimap.cpp.o
+
+.PHONY : GeomObjects/Minimap.o
+
+# target to build an object file
+GeomObjects/Minimap.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o
+.PHONY : GeomObjects/Minimap.cpp.o
+
+GeomObjects/Minimap.i: GeomObjects/Minimap.cpp.i
+
+.PHONY : GeomObjects/Minimap.i
+
+# target to preprocess a source file
+GeomObjects/Minimap.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.i
+.PHONY : GeomObjects/Minimap.cpp.i
+
+GeomObjects/Minimap.s: GeomObjects/Minimap.cpp.s
+
+.PHONY : GeomObjects/Minimap.s
+
+# target to generate assembly for a file
+GeomObjects/Minimap.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.s
+.PHONY : GeomObjects/Minimap.cpp.s
+
+GeomObjects/Palette.o: GeomObjects/Palette.cpp.o
+
+.PHONY : GeomObjects/Palette.o
+
+# target to build an object file
+GeomObjects/Palette.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o
+.PHONY : GeomObjects/Palette.cpp.o
+
+GeomObjects/Palette.i: GeomObjects/Palette.cpp.i
+
+.PHONY : GeomObjects/Palette.i
+
+# target to preprocess a source file
+GeomObjects/Palette.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.i
+.PHONY : GeomObjects/Palette.cpp.i
+
+GeomObjects/Palette.s: GeomObjects/Palette.cpp.s
+
+.PHONY : GeomObjects/Palette.s
+
+# target to generate assembly for a file
+GeomObjects/Palette.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.s
+.PHONY : GeomObjects/Palette.cpp.s
+
 GeomObjects/TileMap.o: GeomObjects/TileMap.cpp.o
 
 .PHONY : GeomObjects/TileMap.o
@@ -177,6 +258,33 @@ GeomObjects/TileMap.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.s
 .PHONY : GeomObjects/TileMap.cpp.s
 
+Managers/ClickManager.o: Managers/ClickManager.cpp.o
+
+.PHONY : Managers/ClickManager.o
+
+# target to build an object file
+Managers/ClickManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o
+.PHONY : Managers/ClickManager.cpp.o
+
+Managers/ClickManager.i: Managers/ClickManager.cpp.i
+
+.PHONY : Managers/ClickManager.i
+
+# target to preprocess a source file
+Managers/ClickManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.i
+.PHONY : Managers/ClickManager.cpp.i
+
+Managers/ClickManager.s: Managers/ClickManager.cpp.s
+
+.PHONY : Managers/ClickManager.s
+
+# target to generate assembly for a file
+Managers/ClickManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.s
+.PHONY : Managers/ClickManager.cpp.s
+
 Managers/MouseStatus.o: Managers/MouseStatus.cpp.o
 
 .PHONY : Managers/MouseStatus.o
@@ -203,6 +311,60 @@ Managers/MouseStatus.s: Managers/MouseStatus.cpp.s
 Managers/MouseStatus.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.s
 .PHONY : Managers/MouseStatus.cpp.s
+
+Managers/SpaceManager.o: Managers/SpaceManager.cpp.o
+
+.PHONY : Managers/SpaceManager.o
+
+# target to build an object file
+Managers/SpaceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o
+.PHONY : Managers/SpaceManager.cpp.o
+
+Managers/SpaceManager.i: Managers/SpaceManager.cpp.i
+
+.PHONY : Managers/SpaceManager.i
+
+# target to preprocess a source file
+Managers/SpaceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.i
+.PHONY : Managers/SpaceManager.cpp.i
+
+Managers/SpaceManager.s: Managers/SpaceManager.cpp.s
+
+.PHONY : Managers/SpaceManager.s
+
+# target to generate assembly for a file
+Managers/SpaceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.s
+.PHONY : Managers/SpaceManager.cpp.s
+
+Managers/TextureManager.o: Managers/TextureManager.cpp.o
+
+.PHONY : Managers/TextureManager.o
+
+# target to build an object file
+Managers/TextureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o
+.PHONY : Managers/TextureManager.cpp.o
+
+Managers/TextureManager.i: Managers/TextureManager.cpp.i
+
+.PHONY : Managers/TextureManager.i
+
+# target to preprocess a source file
+Managers/TextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.i
+.PHONY : Managers/TextureManager.cpp.i
+
+Managers/TextureManager.s: Managers/TextureManager.cpp.s
+
+.PHONY : Managers/TextureManager.s
+
+# target to generate assembly for a file
+Managers/TextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.s
+.PHONY : Managers/TextureManager.cpp.s
 
 WindowObjects/DialogWindow.o: WindowObjects/DialogWindow.cpp.o
 
@@ -297,12 +459,30 @@ help:
 	@echo "... GeomObjects/Button.o"
 	@echo "... GeomObjects/Button.i"
 	@echo "... GeomObjects/Button.s"
+	@echo "... GeomObjects/MessangeBox.o"
+	@echo "... GeomObjects/MessangeBox.i"
+	@echo "... GeomObjects/MessangeBox.s"
+	@echo "... GeomObjects/Minimap.o"
+	@echo "... GeomObjects/Minimap.i"
+	@echo "... GeomObjects/Minimap.s"
+	@echo "... GeomObjects/Palette.o"
+	@echo "... GeomObjects/Palette.i"
+	@echo "... GeomObjects/Palette.s"
 	@echo "... GeomObjects/TileMap.o"
 	@echo "... GeomObjects/TileMap.i"
 	@echo "... GeomObjects/TileMap.s"
+	@echo "... Managers/ClickManager.o"
+	@echo "... Managers/ClickManager.i"
+	@echo "... Managers/ClickManager.s"
 	@echo "... Managers/MouseStatus.o"
 	@echo "... Managers/MouseStatus.i"
 	@echo "... Managers/MouseStatus.s"
+	@echo "... Managers/SpaceManager.o"
+	@echo "... Managers/SpaceManager.i"
+	@echo "... Managers/SpaceManager.s"
+	@echo "... Managers/TextureManager.o"
+	@echo "... Managers/TextureManager.i"
+	@echo "... Managers/TextureManager.s"
 	@echo "... WindowObjects/DialogWindow.o"
 	@echo "... WindowObjects/DialogWindow.i"
 	@echo "... WindowObjects/DialogWindow.s"

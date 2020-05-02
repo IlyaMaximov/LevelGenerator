@@ -17,44 +17,15 @@ enum class TextureName {
 class TextureManager {
 public:
 
-    TextureManager(const std::string&  file, const std::vector<std::pair<TextureName, sf::IntRect>>& data) :
-            texture_file_(file) {
-        if (!all_textures_.loadFromFile(file)) {
-            throw std::runtime_error("File cannot be opened");
-        }
-
-        data_.reserve(data.size());
-        for (auto& [texture_name, rect]: data) {
-            data_.emplace_back(texture_name, rect, file);
-        }
-        sf::IntRect rect(data_.size() * data_[0].borders.width, 0, 0, 0);
-        data_.emplace_back(TextureName::Emptiness, rect, file);
-    }
+    TextureManager(const std::string&  file, const std::vector<std::pair<TextureName, sf::IntRect>>& data);
 
     TextureManager(const TextureManager&) = delete;
     TextureManager(TextureManager&&) = delete;
     TextureManager& operator=(TextureManager&) = delete;
     TextureManager& operator=(TextureManager&&) = delete;
 
-    sf::IntRect getRect(const TextureName name) const {
-        for (auto& elem: data_) {
-            if (elem.texture_name == name) {
-                return elem.borders;
-            }
-        }
-
-        throw std::runtime_error("There is no texture with this name");
-    }
-
-    const sf::Texture* getTexture(const TextureName name) const {
-        for (auto& elem: data_) {
-            if (elem.texture_name == name) {
-                return &elem.texture;
-            }
-        }
-
-        throw std::runtime_error("There is no texture with this name");
-    }
+    sf::IntRect getRect(TextureName name) const;
+    const sf::Texture* getTexture(TextureName name) const;
 
     const sf::Texture* getAllTextures() const {
         return &all_textures_;

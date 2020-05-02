@@ -52,6 +52,15 @@ void TileMap::clear() {
     }
 }
 
+void TileMap::loadInfo(std::vector<TextureName>&& new_info) {
+    info_ = std::move(new_info);
+    for (size_t tile_number = 0; tile_number < info_.size(); ++tile_number) {
+        updateTileTexture(tile_number);
+    }
+}
+
+/////////////////////////////////////
+
 void TileMap::updateTileTexture(int tile_number) {
     sf::Vertex* quad = &m_vertices_[tile_number * 4];
     sf::IntRect tex_rect = texture_manager_->getRect(info_[tile_number]);

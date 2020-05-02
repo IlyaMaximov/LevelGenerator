@@ -27,8 +27,8 @@ public:
         return tile_size_;
     }
 
-    sf::Vector2f getSizeInTiles() const {
-        return sf::Vector2f(width_, height_);
+    sf::Vector2u getSizeInTiles() const {
+        return sf::Vector2u(width_, height_);
     }
 
     TextureName getTextureName(int i, int j) const {
@@ -45,6 +45,7 @@ public:
 
     void click(sf::Vector2f click_pos);
     void clear();
+    void loadInfo(std::vector<TextureName>&&);
 
 
 private:

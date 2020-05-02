@@ -6,7 +6,7 @@
 struct MouseStatus {
 
     static TextureName getLandscape() {
-     //   assert(landscape != nullptr);
+        assert(landscape != nullptr);
         return landscape->getTextureName();
     }
 

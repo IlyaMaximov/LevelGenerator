@@ -12,7 +12,7 @@
 class LevelGenerator : sf::RenderWindow {
 public:
     explicit LevelGenerator(const std::vector<TextureName>& palette_landscapes, TextureManager* texture_manager,
-                            const sf::VideoMode& window = sf::VideoMode::getDesktopMode());
+            const sf::VideoMode& window = sf::VideoMode::getDesktopMode(), ClickManager* click_manager = nullptr);
 
     LevelGenerator(const LevelGenerator& ) = delete;
     LevelGenerator(LevelGenerator&& ) = delete;
@@ -22,6 +22,9 @@ public:
     ~LevelGenerator() override {
         for (Button* service_button: service_buttons_) {
             delete service_button;
+        }
+        if (init_click_manager_) {
+            delete click_manager_;
         }
     }
 
@@ -35,7 +38,8 @@ private:
     sf::Vector2f size_;
     TextureManager* texture_manager_;
     SpaceManager space_manager_;
-    ClickManager click_manager_;
+    bool init_click_manager_ = false;
+    ClickManager* click_manager_;
     TileMap map_;
     Minimap minimap_;
     Palette palette_;

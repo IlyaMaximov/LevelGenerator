@@ -1,5 +1,7 @@
 #include "Button.h"
 #include "../Managers/MouseStatus.h"
+#include "../WindowObjects/DialogWindow.h"
+#include <fstream>
 
 Button::Button(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager, TextureName texture, const sf::Color& color) :
     pos_(pos),
@@ -115,11 +117,53 @@ void LandscapeButton::click() {
 }
 
 void SaveButton::click() {
+    std::string file_name;
+    DialogWindow ask_window("What do you want to name this map?", &file_name, nullptr);
+    ask_window.run();
+    write_map(std::move(file_name));
 }
 
 void OpenButton::click() {
+    std::string file_name;
+    DialogWindow window("What file do you want to open?", &file_name, nullptr);
+    window.run();
+    read_map(std::move(file_name));
 }
 
 void ClearButton::click() {
     map_->clear();
+}
+
+void SaveButton::write_map(std::string &&file_name) {
+    std::ofstream file_out(file_name);
+    file_out << map_->getSizeInTiles().x << " " << map_->getSizeInTiles().y << '\n';
+    for (size_t i = 0; i < map_->getSizeInTiles().y; ++i) {
+        for (size_t j = 0; j < map_->getSizeInTiles().x; ++j) {
+            file_out << static_cast<size_t>(map_->getTextureName(i, j)) << " ";
+        }
+        file_out << "\n";
+    }
+    file_out.close();
+}
+
+void OpenButton::read_map(std::string &&file_name) {
+    sf::Vector2u map_size;
+    std::ifstream file_in(file_name);
+    if (!file_in.is_open()) {
+        throw std::runtime_error("Error open file");
+    }
+    file_in >> map_size.x >> map_size.y;
+    /////////////////////////////////////////////////////////
+    if (map_->getSizeInTiles() != map_size) {
+        throw std::runtime_error("Error map size");
+    }
+    ///////////////////////////////////////////////////
+    std::vector<TextureName> map_info(map_size.x * map_size.y);
+    for (size_t i = 0; i < map_size.x * map_size.y; ++i) {
+        int texture_id;
+        file_in >> texture_id;
+        map_info[i] = static_cast<TextureName>(texture_id);
+    }
+    map_->loadInfo(std::move(map_info));
+    file_in.close();
 }

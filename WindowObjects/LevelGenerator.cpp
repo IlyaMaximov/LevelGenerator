@@ -1,17 +1,18 @@
 #include "LevelGenerator.h"
 
 LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscapes, TextureManager *texture_manager,
-                               const sf::VideoMode &window) :
+                               const sf::VideoMode &window, ClickManager* click_manager) :
     sf::RenderWindow(window,"Level Generator",sf::Style::Default,sf::ContextSettings(0, 0, 8)),
     size_(getSize()),
     texture_manager_(texture_manager),
     space_manager_(window.width, window.height),
-    click_manager_(),
+    init_click_manager_(click_manager == nullptr),
+    click_manager_(init_click_manager_ ? new ClickManager() : click_manager),
     map_(space_manager_.getPos(GeomObj::Map), sf::Vector2u(32, 32), space_manager_.getSize(GeomObj::Map).x / 32,
          space_manager_.getSize(GeomObj::Map).y / 32,texture_manager_),
     minimap_(space_manager_.getPos(GeomObj::Minimap), space_manager_.getSize(GeomObj::Minimap), &map_),
     palette_(space_manager_.getPos(GeomObj::Palette), space_manager_.getSize(GeomObj::Palette),
-             texture_manager_, &click_manager_, this, palette_landscapes) {
+             texture_manager_, click_manager_, this, palette_landscapes) {
 
         alignWindow();
         sf::Color button_color = sf::Color(135, 206, 250);
@@ -29,9 +30,9 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
 
         service_buttons_ = {save_button, open_button, clear_button};
 
-        click_manager_.addMap(&map_, this);
+        click_manager_->addMap(&map_, this);
         for (auto& button : service_buttons_) {
-            click_manager_.addButton(button, this);
+            click_manager_->addButton(button, this);
         }
 }
 
@@ -49,7 +50,7 @@ void LevelGenerator::run()  {
             if (event.type == sf::Event::Closed)
                 close();
             sf::Vector2f scale = {getSize().x / size_.x, getSize().y / size_.y};
-            click_manager_.checkEvents(event, scale, this);
+            click_manager_->checkEvents(event, scale, this);
         }
         clear(sf::Color(240, 240, 240));
 

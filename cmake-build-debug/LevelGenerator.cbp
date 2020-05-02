@@ -90,10 +90,19 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h">
@@ -105,6 +114,9 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
@@ -114,7 +126,16 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.cpp">

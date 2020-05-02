@@ -45,6 +45,7 @@ protected:
     sf::Text name_{};
 };
 
+//////////////////////////////////////////////
 
 class LandscapeButton : public Button {
 public:
@@ -61,6 +62,21 @@ private:
     ButtonStatus status_ = ButtonStatus::Deactivated;
 };
 
+class ClearButton : public Button {
+public:
+    explicit ClearButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
+            Button(pos, sizes, nullptr, TextureName::Emptiness, color),
+            map_(map) {
+        setName("Clear Map");
+    };
+
+    void click() override;
+
+private:
+    TileMap* map_ = nullptr;
+};
+
+
 class SaveButton : public Button {
 public:
     explicit SaveButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
@@ -72,6 +88,8 @@ public:
     void click() override;
 
 private:
+    void write_map(std::string&& file_name);
+
     TileMap* map_ = nullptr;
 };
 
@@ -86,20 +104,8 @@ public:
     void click() override;
 
 private:
-    TileMap* map_ = nullptr;
-};
+    void read_map(std::string&& file_name);
 
-class ClearButton : public Button {
-public:
-    explicit ClearButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
-        Button(pos, sizes, nullptr, TextureName::Emptiness, color),
-        map_(map) {
-        setName("Clear Map");
-    };
-
-    void click() override;
-
-private:
     TileMap* map_ = nullptr;
 };
 

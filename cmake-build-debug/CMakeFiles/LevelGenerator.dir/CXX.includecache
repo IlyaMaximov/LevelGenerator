@@ -19,14 +19,12 @@ cassert
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
 iostream
 -
+SFML/Graphics.hpp
+-
 
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.h
 TileMap.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
-iostream
--
-cassert
--
 
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h
 vector
@@ -37,6 +35,8 @@ Button.h
 /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 ../Managers/SpaceManager.h
 /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h
+../Managers/ClickManager.h
+/home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.h
 
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
 SFML/Graphics.hpp
@@ -74,16 +74,6 @@ utility
 iostream
 -
 
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
-SFML/Graphics.hpp
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/SFML/Graphics.hpp
-../GeomObjects/MessangeBox.h
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
-../Managers/ClickManager.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.h
-iostream
--
-
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
 SFML/Graphics.hpp
 -
@@ -105,6 +95,4 @@ iostream
 -
 WindowObjects/LevelGenerator.h
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
-WindowObjects/DialogWindow.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
 
