@@ -15,14 +15,12 @@ enum class GeomObj {
 
 class SpaceManager {
 public:
-
+    explicit SpaceManager(size_t width = sf::VideoMode::getDesktopMode().width,
+                          size_t height = sf::VideoMode::getDesktopMode().height);
     SpaceManager(const SpaceManager& ) = delete;
     SpaceManager(SpaceManager&& ) = delete;
     SpaceManager& operator=(SpaceManager& ) = delete;
     SpaceManager& operator=(SpaceManager&& ) = delete;
-
-    explicit SpaceManager(size_t width = sf::VideoMode::getDesktopMode().width,
-                          size_t height = sf::VideoMode::getDesktopMode().height);
 
     [[nodiscard]] sf::Vector2f getPos(GeomObj obj) const;
     [[nodiscard]] sf::Vector2f getSize(GeomObj obj) const;

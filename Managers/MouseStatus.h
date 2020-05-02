@@ -3,7 +3,8 @@
 
 #include "../GeomObjects/Button.h"
 
-struct MouseStatus {
+class MouseStatus {
+public:
 
     static TextureName getLandscape() {
         assert(landscape != nullptr);

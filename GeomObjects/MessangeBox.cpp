@@ -1,7 +1,6 @@
 #include "MessangeBox.h"
 #include "../WindowObjects/DialogWindow.h"
 
-
 MessageBox::MessageBox(sf::RenderWindow *init_window):
     window_(init_window),
     text_box_(sf::Vector2f(18 * 30, 25)) {
@@ -13,6 +12,31 @@ MessageBox::MessageBox(sf::RenderWindow *init_window):
         textBoxConstructor();
         outputTextConstructor();
 }
+
+sf::FloatRect MessageBox::getLocalBounds() const {
+    return sf::FloatRect(getPosition() - getOrigin(), getSize());
+}
+
+sf::Vector2f MessageBox::getSize() const {
+    return text_box_.getSize();
+}
+
+std::string MessageBox::getUserText() const {
+    return user_text_;
+}
+
+bool MessageBox::isFocused() const {
+    return is_focused_;
+}
+
+bool MessageBox::textBoxFull() const{
+    return output_text_.getLocalBounds().width + 18 > text_box_.getSize().x;
+}
+
+bool MessageBox::contains(sf::Vector2f pnt_) const {
+    return getLocalBounds().contains(pnt_.x, pnt_.y);
+}
+
 
 void MessageBox::setFocus(bool focus) {
     is_focused_ = focus;
@@ -36,6 +60,8 @@ void MessageBox::handleInputChar(uint32_t symbol) {
     output_text_.setString(user_text_);
 }
 
+///////////////////////////////////////////
+
 void MessageBox::textBoxConstructor() {
     text_box_.setOutlineThickness(2);
     text_box_.setFillColor(sf::Color::White);
@@ -49,9 +75,8 @@ void MessageBox::outputTextConstructor() {
     output_text_.setPosition(text_box_.getPosition());
 }
 
-bool MessageBox::textBoxFull() {
-    return output_text_.getLocalBounds().width + 18 > text_box_.getSize().x;
+void MessageBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {
+    states.transform *= getTransform();
+    target.draw(text_box_, states);
+    target.draw(output_text_, states);
 }
-
-
-

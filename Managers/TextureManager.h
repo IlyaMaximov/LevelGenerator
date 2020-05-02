@@ -17,7 +17,7 @@ enum class TextureName {
 class TextureManager {
 public:
 
-    TextureManager(const std::string&  file, const std::vector<std::pair<TextureName, sf::IntRect>>& data);
+    explicit TextureManager(const std::string& tex_file, const std::vector<std::pair<TextureName, sf::IntRect>>& data);
 
     TextureManager(const TextureManager&) = delete;
     TextureManager(TextureManager&&) = delete;
@@ -26,10 +26,7 @@ public:
 
     sf::IntRect getRect(TextureName name) const;
     const sf::Texture* getTexture(TextureName name) const;
-
-    const sf::Texture* getAllTextures() const {
-        return &all_textures_;
-    }
+    const sf::Texture* getAllTextures() const;
 
 private:
 

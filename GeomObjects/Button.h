@@ -82,13 +82,13 @@ public:
     explicit SaveButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
         Button(pos, sizes, nullptr, TextureName::Emptiness, color),
         map_(map) {
-        setName("Save Current Map");
+        setName("Save Map");
     };
 
     void click() override;
 
 private:
-    void write_map(std::string&& file_name);
+    void write_map(std::string&& file_name) const;
 
     TileMap* map_ = nullptr;
 };
@@ -98,13 +98,13 @@ public:
     explicit OpenButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
         Button(pos, sizes, nullptr, TextureName::Emptiness, color),
         map_(map) {
-        setName("Open New Map");
+        setName("Open Map");
     };
 
     void click() override;
 
 private:
-    void read_map(std::string&& file_name);
+    void read_map(std::string&& file_name) const;
 
     TileMap* map_ = nullptr;
 };

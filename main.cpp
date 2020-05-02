@@ -12,8 +12,8 @@ std::vector<std::pair<TextureName, sf::IntRect>> get_marking() {
 
 
 int main() {
-    size_t window_width = std::max(650, 1300);
-    size_t window_height = std::max(430, 800);
+    size_t window_width = 1300;
+    size_t window_height = 800;
     sf::VideoMode window = sf::VideoMode(window_width, window_height);
 
     try {

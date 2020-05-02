@@ -20,7 +20,6 @@ sf::IntRect TextureManager::getRect(TextureName name) const {
             return elem.borders;
         }
     }
-
     throw std::runtime_error("There is no texture with this name");
 }
 
@@ -30,6 +29,9 @@ const sf::Texture* TextureManager::getTexture(TextureName name) const {
             return &elem.texture;
         }
     }
-
     throw std::runtime_error("There is no texture with this name");
+}
+
+const sf::Texture* TextureManager::getAllTextures() const {
+    return &all_textures_;
 }

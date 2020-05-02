@@ -13,12 +13,6 @@ public:
     explicit Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* tex_manager, ClickManager* click_manager,
             sf::RenderWindow* window_ptr, const std::vector<TextureName>& landscapes = {});
 
-    Palette(const Palette& ) = delete;
-    Palette(Palette&& ) = delete;
-    Palette& operator =(const Palette& ) = delete;
-    Palette& operator =(Palette&& ) = delete;
-
-
 private:
 
     void setName(std::string&& name);

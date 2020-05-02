@@ -134,7 +134,7 @@ void ClearButton::click() {
     map_->clear();
 }
 
-void SaveButton::write_map(std::string &&file_name) {
+void SaveButton::write_map(std::string &&file_name) const {
     std::ofstream file_out(file_name);
     file_out << map_->getSizeInTiles().x << " " << map_->getSizeInTiles().y << '\n';
     for (size_t i = 0; i < map_->getSizeInTiles().y; ++i) {
@@ -146,7 +146,7 @@ void SaveButton::write_map(std::string &&file_name) {
     file_out.close();
 }
 
-void OpenButton::read_map(std::string &&file_name) {
+void OpenButton::read_map(std::string &&file_name) const {
     sf::Vector2u map_size;
     std::ifstream file_in(file_name);
     if (!file_in.is_open()) {

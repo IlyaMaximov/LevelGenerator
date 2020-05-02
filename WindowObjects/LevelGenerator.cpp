@@ -3,7 +3,7 @@
 LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscapes, TextureManager *texture_manager,
                                const sf::VideoMode &window, ClickManager* click_manager) :
     sf::RenderWindow(window,"Level Generator",sf::Style::Default,sf::ContextSettings(0, 0, 8)),
-    size_(getSize()),
+    size_(this->getSize()),
     texture_manager_(texture_manager),
     space_manager_(window.width, window.height),
     init_click_manager_(click_manager == nullptr),
@@ -14,6 +14,7 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
     palette_(space_manager_.getPos(GeomObj::Palette), space_manager_.getSize(GeomObj::Palette),
              texture_manager_, click_manager_, this, palette_landscapes) {
 
+        sizeCheck();
         alignWindow();
         sf::Color button_color = sf::Color(135, 206, 250);
         Button* save_button = new SaveButton(space_manager_.getPos(GeomObj::SaveButton),
@@ -42,11 +43,17 @@ void LevelGenerator::alignWindow() {
     setPosition(sf::Vector2i(x_centre, y_centre));
 }
 
+void LevelGenerator::sizeCheck() const {
+    if (size_.x < 650 || size_.y < 430) {
+        throw std::invalid_argument("Minimum map size is 650x430");
+    }
+}
+
+
 void LevelGenerator::run()  {
     while (isOpen()) {
         sf::Event event{};
-        while (pollEvent(event))
-        {
+        while (pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 close();
             sf::Vector2f scale = {getSize().x / size_.x, getSize().y / size_.y};
@@ -63,4 +70,3 @@ void LevelGenerator::run()  {
         display();
     }
 }
-

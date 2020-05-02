@@ -34,11 +34,12 @@ public:
 private:
 
     void alignWindow();
+    void sizeCheck() const;
 
     sf::Vector2f size_;
     TextureManager* texture_manager_;
     SpaceManager space_manager_;
-    bool init_click_manager_ = false;
+    bool init_click_manager_;
     ClickManager* click_manager_;
     TileMap map_;
     Minimap minimap_;

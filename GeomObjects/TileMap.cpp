@@ -32,6 +32,39 @@ TileMap::TileMap(sf::Vector2f position, sf::Vector2u tile_size, size_t width, si
         }
 }
 
+sf::Vector2f TileMap::getPos() const {
+    return pos_;
+}
+
+sf::Vector2f TileMap::getSize() const {
+    return sf::Vector2f(tile_size_.x * width_, tile_size_.y * height_);
+}
+
+sf::FloatRect TileMap::getLocalBounds() const {
+    return sf::FloatRect(getPos(), getSize());
+}
+
+sf::Vector2u TileMap::getTileSize() const {
+    return tile_size_;
+}
+
+sf::Vector2u TileMap::getSizeInTiles() const {
+    return sf::Vector2u(width_, height_);
+}
+
+TextureName TileMap::getTextureName(int i, int j) const {
+    return info_[get_index(i, j)];
+}
+
+TextureName TileMap::getTextureName(int tile_num) const {
+    return info_[tile_num];
+}
+
+const std::vector<TextureName>& TileMap::getInfo() const {
+    return info_;
+}
+
+
 void TileMap::click(sf::Vector2f click_pos) {
     click_pos -= pos_;
     size_t tile_number = get_index(static_cast<size_t>(click_pos.y) / tile_size_.y,

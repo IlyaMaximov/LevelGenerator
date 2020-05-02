@@ -13,7 +13,6 @@ public:
     ClickManager(ClickManager&& ) = delete;
     ClickManager& operator=(const ClickManager& ) = delete;
     ClickManager& operator=(ClickManager&& ) = delete;
-    ~ClickManager() = default;
 
     void addButton(Button* button_ptr, sf::RenderWindow* window_ptr);
     void addMap(TileMap* map_ptr, sf::RenderWindow* window_ptr);

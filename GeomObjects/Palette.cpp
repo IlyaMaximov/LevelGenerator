@@ -24,6 +24,7 @@ Palette::Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager *tex_manag
     sf::Vector2f button_pos = {pos_.x + (shift + button_size.width) * landscapes.size() + shift, pos_.y + size_.y / 2};
     landscape_buttons_.emplace_back(button_pos, sf::Vector2f(button_size.width, button_size.height),
                                     tex_manager_, TextureName::Emptiness);
+
     for (auto& button : landscape_buttons_) {
         click_manager_->addButton(&button, window_ptr_);
     }
@@ -48,8 +49,8 @@ void Palette::alignName() {
 }
 
 void Palette::fontSizeNormalize() {
-    float scale_aspect_y = 0.8f * (size_.x / name_.getLocalBounds().width);
-    float scale_aspect_x = 0.9f * ((size_.y / 5) / name_.getLocalBounds().height);
+    float scale_aspect_x = 0.8f * (size_.x / name_.getLocalBounds().width);
+    float scale_aspect_y = 0.9f * ((size_.y / 5) / name_.getLocalBounds().height);
     float scale_aspect = std::min(1.f, std::min(scale_aspect_x, scale_aspect_y));
     name_.setScale(scale_aspect, scale_aspect);
 }

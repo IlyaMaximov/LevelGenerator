@@ -8,41 +8,23 @@ class MessageBox : public sf::Transformable, public sf::Drawable {
 public:
     explicit MessageBox(sf::RenderWindow* init_window);
 
-    sf::FloatRect getLocalBounds() {
-        return sf::FloatRect(getPosition() - getOrigin(), getSize());
-    }
+    sf::FloatRect getLocalBounds() const;
+    sf::Vector2f getSize() const;
+    std::string getUserText() const;
 
-    sf::Vector2f getSize() const {
-        return text_box_.getSize();
-    }
-
-    bool isFocused() const {
-        return is_focused_;
-    }
-
-    bool contains(sf::Vector2f pnt_) {
-        return getLocalBounds().contains(pnt_.x, pnt_.y);
-    }
-
-    std::string getUserText() {
-        return user_text_;
-    }
+    bool isFocused() const;
+    bool textBoxFull() const;
+    bool contains(sf::Vector2f pnt_) const;
 
     void setFocus(bool focus);
     void handleInputChar(uint32_t symbol);
+
 
 private:
 
     void textBoxConstructor();
     void outputTextConstructor();
-    bool textBoxFull();
-
-    void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
-        states.transform *= getTransform();
-        target.draw(text_box_, states);
-        target.draw(output_text_, states);
-    }
-
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
     std::string user_text_ = "";
     sf::Font font_;

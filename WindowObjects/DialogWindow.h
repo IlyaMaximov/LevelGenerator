@@ -10,6 +10,10 @@ class DialogWindow : public sf::RenderWindow {
 public:
     explicit DialogWindow(std::string&& message, std::string* user_response, ClickManager* click_manager = nullptr);
 
+    DialogWindow(const DialogWindow& ) = delete;
+    DialogWindow(DialogWindow&& ) = delete;
+    DialogWindow& operator =(const DialogWindow& ) = delete;
+    DialogWindow& operator =(DialogWindow&& ) = delete;
     ~DialogWindow() override;
 
     void EnterPressed(MessageBox*);
@@ -20,6 +24,7 @@ private:
     void alignWindow();
     void queryConstructor(std::string&& query_text);
     void alignQuery();
+    void fontSizeNormalize();
     void alignResponse();
 
     bool close_window_ = false;

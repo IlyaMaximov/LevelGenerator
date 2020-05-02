@@ -21,6 +21,7 @@ void Minimap::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
     TileMap minimap(*map_);
     setMinimap(minimap);
+
     draw_background(target);
     target.draw(minimap, states);
 }

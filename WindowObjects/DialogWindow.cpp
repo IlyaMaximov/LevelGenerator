@@ -1,7 +1,7 @@
 #include "DialogWindow.h"
 
 DialogWindow::DialogWindow(std::string&& message, std::string* user_response, ClickManager *click_manager):
-        sf::RenderWindow(sf::VideoMode(600, 200),"Dialog window",sf::Style::Titlebar|sf::Style::Close,sf::ContextSettings(0, 0, 8)),
+        sf::RenderWindow(sf::VideoMode(600, 200),"Dialog window",sf::Style::Titlebar|sf::Style::Close),
         size_(sf::Vector2u(600, 200)),
         init_click_manager_(click_manager == nullptr),
         click_manager_(init_click_manager_ ? new ClickManager() : click_manager),
@@ -61,6 +61,7 @@ void DialogWindow::queryConstructor(std::string &&query_text) {
     query_.setFillColor(sf::Color::Black);
     query_.setCharacterSize(28);
     alignQuery();
+    fontSizeNormalize();
 }
 
 void DialogWindow::alignQuery() {
@@ -69,6 +70,12 @@ void DialogWindow::alignQuery() {
     query_.setOrigin(query_centre);
     sf::Vector2f query_pos = sf::Vector2f(static_cast<float>(size_.x) / 2, static_cast<float>(size_.y) / 3);
     query_.setPosition(query_pos);
+}
+
+void DialogWindow::fontSizeNormalize() {
+    float scale_aspect_x = 0.9f * (size_.x / query_.getLocalBounds().width);
+    float scale_aspect = std::min(1.f, scale_aspect_x);
+    query_.setScale(scale_aspect, scale_aspect);
 }
 
 void DialogWindow::alignResponse() {

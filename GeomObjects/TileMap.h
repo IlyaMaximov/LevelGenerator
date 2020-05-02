@@ -11,37 +11,15 @@ public:
     explicit TileMap(sf::Vector2f position, sf::Vector2u tile_size, size_t width, size_t height,
         TextureManager* texture_manager, std::vector<TextureName>&& info = {});
 
-    sf::Vector2f getPos() const {
-        return pos_;
-    }
+    sf::Vector2f getPos() const;
+    sf::Vector2f getSize() const;
+    sf::Vector2u getTileSize() const;
+    sf::Vector2u getSizeInTiles() const;
+    sf::FloatRect getLocalBounds() const;
 
-    sf::Vector2f getSize() const {
-        return sf::Vector2f(tile_size_.x * width_, tile_size_.y * height_);
-    }
-
-    sf::FloatRect getLocalBounds() const {
-        return sf::FloatRect(getPos(), getSize());
-    }
-
-    sf::Vector2u getTileSize() const {
-        return tile_size_;
-    }
-
-    sf::Vector2u getSizeInTiles() const {
-        return sf::Vector2u(width_, height_);
-    }
-
-    TextureName getTextureName(int i, int j) const {
-        return info_[get_index(i, j)];
-    }
-
-    TextureName getTextureName(int tile_num) const {
-        return info_[tile_num];
-    }
-
-    const std::vector<TextureName>& getInfo() const {
-        return info_;
-    }
+    TextureName getTextureName(int i, int j) const;
+    TextureName getTextureName(int tile_num) const;
+    const std::vector<TextureName>& getInfo() const;
 
     void click(sf::Vector2f click_pos);
     void clear();

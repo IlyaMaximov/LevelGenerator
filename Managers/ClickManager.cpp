@@ -12,6 +12,7 @@ void ClickManager::addMessageBox(MessageBox *ptr, sf::RenderWindow *window_ptr) 
     message_boxes_.emplace_back(ptr, window_ptr);
 }
 
+
 void ClickManager::deleteButton(Button *button_ptr, sf::RenderWindow *window_ptr) {
     for (size_t i = 0; i < buttons_.size(); ++i) {
         if (buttons_[i].window_ptr == window_ptr && buttons_[i].obj_ptr == button_ptr) {
@@ -39,6 +40,7 @@ void ClickManager::deleteMessageBox(MessageBox *ptr, sf::RenderWindow *window_pt
     }
 }
 
+
 void ClickManager::checkEvents(sf::Event &event, const sf::Vector2f &scale, sf::RenderWindow *window_ptr) const {
     sf::Vector2f pos;
 
@@ -62,6 +64,7 @@ void ClickManager::checkEvents(sf::Event &event, const sf::Vector2f &scale, sf::
         checkMessageBoxClick(event, pos, window_ptr);
     }
 }
+
 
 void ClickManager::checkButtonClick(sf::Event &event, const sf::Vector2f &pos, sf::RenderWindow *window_ptr) const {
     for (auto& button : buttons_) {
