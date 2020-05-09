@@ -13,7 +13,6 @@ public:
 private:
 
     void draw_background(sf::RenderTarget& target) const;
-    void setMinimap(TileMap& minimap) const;
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
     TileMap* map_;

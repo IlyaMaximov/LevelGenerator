@@ -21,7 +21,6 @@ public:
 private:
 
     struct WindowObject {
-
         WindowObject(WindowObj* obj, sf::RenderWindow* window) :
             obj_ptr(obj),
             window_ptr(window) {};

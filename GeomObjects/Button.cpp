@@ -164,6 +164,9 @@ void OpenButton::read_error(std::string &&error_description, std::ifstream& file
 
 void OpenButton::read_map(std::string &&file_name) const {
     sf::Vector2u map_size;
+    if (file_name.empty()) {
+        return;
+    }
     std::ifstream file_in(file_name);
     if (!file_in.is_open()) {
         read_error("This file doesn't exist", file_in);

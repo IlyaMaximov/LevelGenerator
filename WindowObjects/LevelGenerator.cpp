@@ -61,12 +61,12 @@ void LevelGenerator::run()  {
         }
         clear(sf::Color(240, 240, 240));
 
-        draw(minimap_);
         draw(map_);
         draw(palette_);
         for (auto button: service_buttons_) {
             draw(*button);
         }
+        draw(minimap_);
         display();
     }
 }

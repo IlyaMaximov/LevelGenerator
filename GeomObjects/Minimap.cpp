@@ -9,19 +9,17 @@ void Minimap::draw_background(sf::RenderTarget &target) const {
     target.draw(map_background);
 }
 
-void Minimap::setMinimap(TileMap &minimap) const {
-    float x_compress = size_.x / map_->getSize().x;
-    float y_compress = size_.y / map_->getSize().y;
-    minimap.setScale(x_compress, y_compress);
-    sf::Vector2f shift(map_->getPos().x * x_compress, map_->getPos().y * y_compress);
-    minimap.move(pos_ - shift);
-}
-
 void Minimap::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
-    TileMap minimap(*map_);
-    setMinimap(minimap);
-
     draw_background(target);
-    target.draw(minimap, states);
+
+    sf::View minimap_view(sf::FloatRect(map_->getPos(), map_->getSize()));
+    sf::Vector2u window_size = target.getSize();
+    sf::FloatRect minimap_rect(pos_.x / window_size.x, pos_.y / window_size.y,
+                               size_.x / window_size.x, size_.y / window_size.y);
+    minimap_view.setViewport(minimap_rect);
+
+    target.setView(minimap_view);
+    target.draw(*map_);
+    target.setView(target.getDefaultView());
 }
