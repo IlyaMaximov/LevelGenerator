@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o"
+  "/home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o"

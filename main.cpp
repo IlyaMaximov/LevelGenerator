@@ -23,7 +23,7 @@ int main() {
         std::vector<TextureName>palette_landscapes
                 = {TextureName::Grass, TextureName::Tree, TextureName::Gravel, TextureName::River};
 
-        LevelGenerator generator(palette_landscapes, &texture_manager);
+        LevelGenerator generator(palette_landscapes, &texture_manager, window);
         generator.run();
     } catch (std::exception& e) {
         std::cout << e.what() << std::endl;

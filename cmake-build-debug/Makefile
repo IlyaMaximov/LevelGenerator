@@ -150,6 +150,33 @@ GeomObjects/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.s
 .PHONY : GeomObjects/Button.cpp.s
 
+GeomObjects/GeomObj.o: GeomObjects/GeomObj.cpp.o
+
+.PHONY : GeomObjects/GeomObj.o
+
+# target to build an object file
+GeomObjects/GeomObj.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o
+.PHONY : GeomObjects/GeomObj.cpp.o
+
+GeomObjects/GeomObj.i: GeomObjects/GeomObj.cpp.i
+
+.PHONY : GeomObjects/GeomObj.i
+
+# target to preprocess a source file
+GeomObjects/GeomObj.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.i
+.PHONY : GeomObjects/GeomObj.cpp.i
+
+GeomObjects/GeomObj.s: GeomObjects/GeomObj.cpp.s
+
+.PHONY : GeomObjects/GeomObj.s
+
+# target to generate assembly for a file
+GeomObjects/GeomObj.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.s
+.PHONY : GeomObjects/GeomObj.cpp.s
+
 GeomObjects/MessangeBox.o: GeomObjects/MessangeBox.cpp.o
 
 .PHONY : GeomObjects/MessangeBox.o
@@ -486,6 +513,9 @@ help:
 	@echo "... GeomObjects/Button.o"
 	@echo "... GeomObjects/Button.i"
 	@echo "... GeomObjects/Button.s"
+	@echo "... GeomObjects/GeomObj.o"
+	@echo "... GeomObjects/GeomObj.i"
+	@echo "... GeomObjects/GeomObj.s"
 	@echo "... GeomObjects/MessangeBox.o"
 	@echo "... GeomObjects/MessangeBox.i"
 	@echo "... GeomObjects/MessangeBox.s"

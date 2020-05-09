@@ -11,6 +11,9 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.cpp
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp

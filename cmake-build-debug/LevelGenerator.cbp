@@ -90,6 +90,12 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>

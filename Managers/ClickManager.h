@@ -18,7 +18,6 @@ public:
     void addMap(TileMap* map_ptr, sf::RenderWindow* window_ptr);
     void addMessageBox(MessageBox* ptr, sf::RenderWindow* window_ptr);
 
-
     void deleteButton(Button* button_ptr, sf::RenderWindow* window_ptr);
     void deleteMap(TileMap* map_ptr, sf::RenderWindow* window_ptr);
     void deleteMessageBox(MessageBox* ptr, sf::RenderWindow* window_ptr);

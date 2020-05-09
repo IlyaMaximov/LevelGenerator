@@ -48,11 +48,11 @@ void MessageBox::setFocus(bool focus) {
 }
 
 void MessageBox::handleInputChar(uint32_t symbol) {
-    if (symbol == 8) {
+    if (symbol == '\b') {
         if (!user_text_.empty()) {
             user_text_.pop_back();
         }
-    } else if (symbol == 13) {
+    } else if (symbol == '\r') {
         dynamic_cast<DialogWindow*>(window_)->EnterPressed(this);
     } else if (!textBoxFull()) {
         user_text_.push_back(symbol);

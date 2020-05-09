@@ -1,0 +1,12 @@
+#ifndef LEVELGENERATOR_GEOMOBJ_H
+#define LEVELGENERATOR_GEOMOBJ_H
+
+
+class GeomObj {
+
+
+
+};
+
+
+#endif //LEVELGENERATOR_GEOMOBJ_H

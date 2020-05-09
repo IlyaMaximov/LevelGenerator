@@ -11,6 +11,9 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/TextureManag
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../WindowObjects/DialogWindow.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../WindowObjects/NotificationWindow.h
 
+CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o: ../GeomObjects/GeomObj.cpp
+CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o: ../GeomObjects/GeomObj.h
+
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: ../GeomObjects/MessangeBox.cpp
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: ../GeomObjects/MessangeBox.h
