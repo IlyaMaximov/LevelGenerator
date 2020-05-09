@@ -1,11 +1,11 @@
 #include "DialogWindow.h"
 
-DialogWindow::DialogWindow(std::string&& message, std::string* user_response, ClickManager *click_manager):
+DialogWindow::DialogWindow(std::string&& message, std::string* user_response, EventManager *click_manager):
         sf::RenderWindow(sf::VideoMode(600, 200),"Dialog window",
                 sf::Style::Titlebar|sf::Style::Close, sf::ContextSettings(0, 0, 8)),
         size_(sf::Vector2u(600, 200)),
         init_click_manager_(click_manager == nullptr),
-        click_manager_(init_click_manager_ ? new ClickManager() : click_manager),
+        click_manager_(init_click_manager_ ? new EventManager() : click_manager),
         user_response_(user_response),
         message_box_(this) {
 
@@ -16,7 +16,7 @@ DialogWindow::DialogWindow(std::string&& message, std::string* user_response, Cl
     queryConstructor(std::move(message));
     alignResponse();
 
-    click_manager_->addMessageBox(&message_box_, this);
+    click_manager_->addWindowObj(&message_box_, this);
 }
 
 DialogWindow::~DialogWindow() {

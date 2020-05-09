@@ -4,8 +4,9 @@
 #include <SFML/Graphics.hpp>
 #include <cassert>
 #include "../Managers/TextureManager.h"
+#include "WindowObj.h"
 
-class TileMap : public sf::Drawable, public sf::Transformable {
+class TileMap : public WindowObj {
 public:
 
     explicit TileMap(sf::Vector2f position, sf::Vector2u tile_size, size_t width, size_t height,
@@ -21,6 +22,7 @@ public:
     TextureName getTextureName(int tile_num) const;
     const std::vector<TextureName>& getInfo() const;
 
+    void AcceptEvent(sf::Event&, const sf::Vector2f &pos) override;
     void click(sf::Vector2f click_pos);
     void clear();
     void loadInfo(std::vector<TextureName>&&);

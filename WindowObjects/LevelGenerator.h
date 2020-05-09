@@ -3,16 +3,16 @@
 
 #include <SFML/Graphics.hpp>
 #include "../Managers/SpaceManager.h"
-#include "../Managers/ClickManager.h"
+#include "../Managers/EventManager.h"
 #include "../Managers/TextureManager.h"
 #include "../GeomObjects/TileMap.h"
 #include "../GeomObjects/Palette.h"
 #include "../GeomObjects/Minimap.h"
 
-class LevelGenerator : sf::RenderWindow {
+class LevelGenerator : public sf::RenderWindow {
 public:
     explicit LevelGenerator(const std::vector<TextureName>& palette_landscapes, TextureManager* texture_manager,
-            const sf::VideoMode& window = sf::VideoMode::getDesktopMode(), ClickManager* click_manager = nullptr);
+                            const sf::VideoMode& window = sf::VideoMode::getDesktopMode(), EventManager* click_manager = nullptr);
 
     LevelGenerator(const LevelGenerator& ) = delete;
     LevelGenerator(LevelGenerator&& ) = delete;
@@ -40,7 +40,7 @@ private:
     TextureManager* texture_manager_;
     SpaceManager space_manager_;
     bool init_click_manager_;
-    ClickManager* click_manager_;
+    EventManager* click_manager_;
     TileMap map_;
     Minimap minimap_;
     Palette palette_;

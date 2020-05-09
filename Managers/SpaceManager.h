@@ -3,7 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 
-enum class GeomObj {
+enum class GeomObjType {
     Map,
     Minimap,
     SaveButton,
@@ -22,8 +22,8 @@ public:
     SpaceManager& operator=(SpaceManager& ) = delete;
     SpaceManager& operator=(SpaceManager&& ) = delete;
 
-    [[nodiscard]] sf::Vector2f getPos(GeomObj obj) const;
-    [[nodiscard]] sf::Vector2f getSize(GeomObj obj) const;
+    [[nodiscard]] sf::Vector2f getPos(GeomObjType obj) const;
+    [[nodiscard]] sf::Vector2f getSize(GeomObjType obj) const;
 
 private:
     const size_t desktop_width_;

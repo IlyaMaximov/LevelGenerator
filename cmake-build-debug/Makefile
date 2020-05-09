@@ -150,33 +150,6 @@ GeomObjects/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.s
 .PHONY : GeomObjects/Button.cpp.s
 
-GeomObjects/GeomObj.o: GeomObjects/GeomObj.cpp.o
-
-.PHONY : GeomObjects/GeomObj.o
-
-# target to build an object file
-GeomObjects/GeomObj.cpp.o:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o
-.PHONY : GeomObjects/GeomObj.cpp.o
-
-GeomObjects/GeomObj.i: GeomObjects/GeomObj.cpp.i
-
-.PHONY : GeomObjects/GeomObj.i
-
-# target to preprocess a source file
-GeomObjects/GeomObj.cpp.i:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.i
-.PHONY : GeomObjects/GeomObj.cpp.i
-
-GeomObjects/GeomObj.s: GeomObjects/GeomObj.cpp.s
-
-.PHONY : GeomObjects/GeomObj.s
-
-# target to generate assembly for a file
-GeomObjects/GeomObj.cpp.s:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.s
-.PHONY : GeomObjects/GeomObj.cpp.s
-
 GeomObjects/MessangeBox.o: GeomObjects/MessangeBox.cpp.o
 
 .PHONY : GeomObjects/MessangeBox.o
@@ -285,32 +258,32 @@ GeomObjects/TileMap.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.s
 .PHONY : GeomObjects/TileMap.cpp.s
 
-Managers/ClickManager.o: Managers/ClickManager.cpp.o
+Managers/EventManager.o: Managers/EventManager.cpp.o
 
-.PHONY : Managers/ClickManager.o
+.PHONY : Managers/EventManager.o
 
 # target to build an object file
-Managers/ClickManager.cpp.o:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o
-.PHONY : Managers/ClickManager.cpp.o
+Managers/EventManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
+.PHONY : Managers/EventManager.cpp.o
 
-Managers/ClickManager.i: Managers/ClickManager.cpp.i
+Managers/EventManager.i: Managers/EventManager.cpp.i
 
-.PHONY : Managers/ClickManager.i
+.PHONY : Managers/EventManager.i
 
 # target to preprocess a source file
-Managers/ClickManager.cpp.i:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.i
-.PHONY : Managers/ClickManager.cpp.i
+Managers/EventManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.i
+.PHONY : Managers/EventManager.cpp.i
 
-Managers/ClickManager.s: Managers/ClickManager.cpp.s
+Managers/EventManager.s: Managers/EventManager.cpp.s
 
-.PHONY : Managers/ClickManager.s
+.PHONY : Managers/EventManager.s
 
 # target to generate assembly for a file
-Managers/ClickManager.cpp.s:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.s
-.PHONY : Managers/ClickManager.cpp.s
+Managers/EventManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s
+.PHONY : Managers/EventManager.cpp.s
 
 Managers/MouseStatus.o: Managers/MouseStatus.cpp.o
 
@@ -513,9 +486,6 @@ help:
 	@echo "... GeomObjects/Button.o"
 	@echo "... GeomObjects/Button.i"
 	@echo "... GeomObjects/Button.s"
-	@echo "... GeomObjects/GeomObj.o"
-	@echo "... GeomObjects/GeomObj.i"
-	@echo "... GeomObjects/GeomObj.s"
 	@echo "... GeomObjects/MessangeBox.o"
 	@echo "... GeomObjects/MessangeBox.i"
 	@echo "... GeomObjects/MessangeBox.s"
@@ -528,9 +498,9 @@ help:
 	@echo "... GeomObjects/TileMap.o"
 	@echo "... GeomObjects/TileMap.i"
 	@echo "... GeomObjects/TileMap.s"
-	@echo "... Managers/ClickManager.o"
-	@echo "... Managers/ClickManager.i"
-	@echo "... Managers/ClickManager.s"
+	@echo "... Managers/EventManager.o"
+	@echo "... Managers/EventManager.i"
+	@echo "... Managers/EventManager.s"
 	@echo "... Managers/MouseStatus.o"
 	@echo "... Managers/MouseStatus.i"
 	@echo "... Managers/MouseStatus.s"

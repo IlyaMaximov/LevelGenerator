@@ -47,6 +47,14 @@ void MessageBox::setFocus(bool focus) {
     }
 }
 
+void MessageBox::AcceptEvent(sf::Event &event, const sf::Vector2f &pos) {
+    if (event.type == sf::Event::MouseButtonPressed) {
+        setFocus(contains(pos));
+    } else if (event.type == sf::Event::TextEntered && isFocused()) {
+        handleInputChar(event.text.unicode);
+    }
+}
+
 void MessageBox::handleInputChar(uint32_t symbol) {
     if (symbol == '\b') {
         if (!user_text_.empty()) {

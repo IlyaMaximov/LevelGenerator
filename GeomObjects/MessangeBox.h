@@ -3,8 +3,9 @@
 
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "WindowObj.h"
 
-class MessageBox : public sf::Transformable, public sf::Drawable {
+class MessageBox : public WindowObj {
 public:
     explicit MessageBox(sf::RenderWindow* init_window);
 
@@ -17,6 +18,7 @@ public:
     bool contains(sf::Vector2f pnt_) const;
 
     void setFocus(bool focus);
+    void AcceptEvent(sf::Event&, const sf::Vector2f &pos) override;
     void handleInputChar(uint32_t symbol);
 
 

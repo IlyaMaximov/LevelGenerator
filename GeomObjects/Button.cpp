@@ -83,6 +83,12 @@ void Button::fontSizeNormalize() {
     name_.setScale(scale_aspect, scale_aspect);
 }
 
+void Button::AcceptEvent(sf::Event &event, const sf::Vector2f& pos) {
+    if (event.type == sf::Event::MouseButtonPressed && getLocalBounds().contains(pos)) {
+        click();
+    }
+}
+
 void Button::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
     states.texture = manager_->getAllTextures();
@@ -91,7 +97,6 @@ void Button::draw(sf::RenderTarget &target, sf::RenderStates states) const {
         target.draw(name_, states);
     }
 }
-
 
 ///////////////////////////////////////////////////
 

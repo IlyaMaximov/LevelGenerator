@@ -2,11 +2,11 @@
 #define LEVELGENERATOR_DIALOGWINDOW_H
 
 #include "SFML/Graphics.hpp"
-#include "../Managers/ClickManager.h"
+#include "../Managers/EventManager.h"
 
 class DialogWindow : public sf::RenderWindow {
 public:
-    explicit DialogWindow(std::string&& message, std::string* user_response, ClickManager* click_manager = nullptr);
+    explicit DialogWindow(std::string&& message, std::string* user_response, EventManager* click_manager = nullptr);
 
     DialogWindow(const DialogWindow& ) = delete;
     DialogWindow(DialogWindow&& ) = delete;
@@ -33,7 +33,7 @@ private:
     sf::Text query_;
     MessageBox message_box_;
     std::string* user_response_;
-    ClickManager* click_manager_;
+    EventManager* click_manager_;
 };
 
 

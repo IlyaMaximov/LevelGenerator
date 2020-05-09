@@ -11,18 +11,20 @@ enum class ButtonStatus {
     Deactivated
 };
 
-class Button : public sf::Drawable, public sf::Transformable {
+class Button : public WindowObj {
 
 public:
 
     explicit Button(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
         TextureName texture = TextureName::Emptiness, const sf::Color& color = sf::Color::White);
+    ~Button() override = default;
 
     sf::Vector2f getPos() const;
     sf::Vector2f getSize() const;
     sf::FloatRect getLocalBounds() const;
     TextureName getTextureName() const;
     void setName(const std::string& name);
+    void AcceptEvent(sf::Event&, const sf::Vector2f &scale) override;
     virtual void click() = 0;
 
 private:
@@ -53,6 +55,7 @@ public:
         Button(pos, sizes, manager, texture) {
             setStatus(ButtonStatus::Deactivated);
     };
+    ~LandscapeButton() override = default;
 
     void click() override;
 
@@ -69,6 +72,7 @@ public:
             map_(map) {
         setName("Clear Map");
     };
+    ~ClearButton() override = default;
 
     void click() override;
 
@@ -84,6 +88,7 @@ public:
         map_(map) {
         setName("Save Map");
     };
+    ~SaveButton() override = default;
 
     void click() override;
 
@@ -100,6 +105,7 @@ public:
         map_(map) {
         setName("Open Map");
     };
+    ~OpenButton() override = default;
 
     void click() override;
 

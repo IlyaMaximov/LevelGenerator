@@ -5,13 +5,13 @@
 #include "Button.h"
 #include "../Managers/TextureManager.h"
 #include "../Managers/SpaceManager.h"
-#include "../Managers/ClickManager.h"
+#include "../Managers/EventManager.h"
 
 class Palette : public sf::Drawable, public sf::Transformable {
 public:
 
-    explicit Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* tex_manager, ClickManager* click_manager,
-            sf::RenderWindow* window_ptr, const std::vector<TextureName>& landscapes = {});
+    explicit Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* tex_manager, EventManager* click_manager,
+                     sf::RenderWindow* window_ptr, const std::vector<TextureName>& landscapes = {});
 
 private:
 
@@ -28,7 +28,7 @@ private:
     sf::Text name_;
     std::vector<LandscapeButton> landscape_buttons_;
     TextureManager* tex_manager_;
-    ClickManager* click_manager_;
+    EventManager* click_manager_;
     sf::RenderWindow* window_ptr_;
 };
 

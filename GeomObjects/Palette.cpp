@@ -1,6 +1,6 @@
 #include "Palette.h"
 
-Palette::Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager *tex_manager, ClickManager *click_manager,
+Palette::Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager *tex_manager, EventManager *click_manager,
                  sf::RenderWindow *window_ptr, const std::vector<TextureName> &landscapes) :
         pos_(pos),
         size_(sizes),
@@ -26,7 +26,7 @@ Palette::Palette(sf::Vector2f pos, sf::Vector2f sizes, TextureManager *tex_manag
                                     tex_manager_, TextureName::Emptiness);
 
     for (auto& button : landscape_buttons_) {
-        click_manager_->addButton(&button, window_ptr_);
+        click_manager_->addWindowObj(&button, window_ptr_);
     }
 }
 

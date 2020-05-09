@@ -92,6 +92,13 @@ void TileMap::loadInfo(std::vector<TextureName>&& new_info) {
     }
 }
 
+void TileMap::AcceptEvent(sf::Event& event, const sf::Vector2f &pos) {
+    if (MouseStatus::getPressedStatus() && getLocalBounds().contains(pos)) {
+        click(pos);
+    }
+}
+
+
 /////////////////////////////////////
 
 void TileMap::updateTileTexture(int tile_number) {

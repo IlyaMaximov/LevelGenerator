@@ -135,18 +135,18 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.cpp -o CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.s
 
-CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
-CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o: ../Managers/ClickManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.cpp
+CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
+CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../Managers/EventManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.cpp
 
-CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.cpp > CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.i
+CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.cpp > CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.i
 
-CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/Managers/ClickManager.cpp -o CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.s
+CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.cpp -o CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s
 
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
 CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: ../GeomObjects/MessangeBox.cpp
@@ -226,19 +226,6 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.cpp -o CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.s
 
-CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
-CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o: ../GeomObjects/GeomObj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.cpp
-
-CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.cpp > CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.i
-
-CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/GeomObjects/GeomObj.cpp -o CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.s
-
 # Object files for target LevelGenerator
 LevelGenerator_OBJECTS = \
 "CMakeFiles/LevelGenerator.dir/main.cpp.o" \
@@ -247,14 +234,13 @@ LevelGenerator_OBJECTS = \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o" \
-"CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o" \
+"CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o" \
-"CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o" \
-"CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o"
+"CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o"
 
 # External object files for target LevelGenerator
 LevelGenerator_EXTERNAL_OBJECTS =
@@ -265,17 +251,16 @@ LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o
-LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o
+LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o
-LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/build.make
 LevelGenerator: CMakeFiles/LevelGenerator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable LevelGenerator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable LevelGenerator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LevelGenerator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

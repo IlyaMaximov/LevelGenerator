@@ -1,11 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o"
-  "CMakeFiles/LevelGenerator.dir/GeomObjects/GeomObj.cpp.o"
   "CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o"
   "CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o"
   "CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o"
   "CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o"
-  "CMakeFiles/LevelGenerator.dir/Managers/ClickManager.cpp.o"
+  "CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o"
   "CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o"
   "CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o"
   "CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o"
