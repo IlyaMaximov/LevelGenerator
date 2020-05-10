@@ -23,8 +23,8 @@ public:
         for (Button* service_button: service_buttons_) {
             delete service_button;
         }
-        if (init_click_manager_) {
-            delete click_manager_;
+        if (init_event_manager_) {
+            delete event_manager_;
         }
     }
 
@@ -39,8 +39,8 @@ private:
     sf::Vector2f size_;
     TextureManager* texture_manager_;
     LayoutManager space_manager_;
-    bool init_click_manager_;
-    EventManager* click_manager_;
+    bool init_event_manager_;
+    EventManager* event_manager_;
     TileMap map_;
     Minimap minimap_;
     Palette palette_;

@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o"
+  "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o"
   "/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.cpp" "/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o"

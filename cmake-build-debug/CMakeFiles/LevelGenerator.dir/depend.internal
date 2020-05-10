@@ -47,8 +47,13 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp
  /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
+ /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
@@ -71,6 +76,9 @@ CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.cpp
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o
+ /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.cpp
+ /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h

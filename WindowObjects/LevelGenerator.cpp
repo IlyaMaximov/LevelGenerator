@@ -6,13 +6,13 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
     size_(this->getSize()),
     texture_manager_(texture_manager),
     space_manager_(window.width, window.height),
-    init_click_manager_(click_manager == nullptr),
-    click_manager_(init_click_manager_ ? new EventManager() : click_manager),
+    init_event_manager_(click_manager == nullptr),
+    event_manager_(init_event_manager_ ? new EventManager() : click_manager),
     map_(space_manager_.getPos(GeomObjType::Map), sf::Vector2u(32, 32), space_manager_.getSize(GeomObjType::Map).x / 32,
          space_manager_.getSize(GeomObjType::Map).y / 32,texture_manager_),
     minimap_(space_manager_.getPos(GeomObjType::Minimap), space_manager_.getSize(GeomObjType::Minimap), &map_),
     palette_(space_manager_.getPos(GeomObjType::Palette), space_manager_.getSize(GeomObjType::Palette),
-             texture_manager_, click_manager_, this, palette_landscapes) {
+             texture_manager_, event_manager_, this, palette_landscapes) {
 
         sizeCheck();
         alignWindow();
@@ -31,9 +31,9 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
 
         service_buttons_ = {save_button, open_button, clear_button};
 
-        click_manager_->addWindowObj(&map_, this);
+        event_manager_->addWindowObj(&map_, this);
         for (auto& button : service_buttons_) {
-            click_manager_->addWindowObj(button, this);
+            event_manager_->addWindowObj(button, this);
         }
 }
 
@@ -57,7 +57,7 @@ void LevelGenerator::run()  {
             if (event.type == sf::Event::Closed)
                 close();
             sf::Vector2f scale = {getSize().x / size_.x, getSize().y / size_.y};
-            click_manager_->checkEvents(event, scale, this);
+            event_manager_->checkEvents(event, scale, this);
         }
         clear(sf::Color(240, 240, 240));
 

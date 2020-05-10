@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o"
   "CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o"
   "CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o"
+  "CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o"
   "CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o"
   "CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o"
   "CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o"

@@ -393,6 +393,33 @@ Managers/TextureManager.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.s
 .PHONY : Managers/TextureManager.cpp.s
 
+WindowObjects/DialogForm.o: WindowObjects/DialogForm.cpp.o
+
+.PHONY : WindowObjects/DialogForm.o
+
+# target to build an object file
+WindowObjects/DialogForm.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o
+.PHONY : WindowObjects/DialogForm.cpp.o
+
+WindowObjects/DialogForm.i: WindowObjects/DialogForm.cpp.i
+
+.PHONY : WindowObjects/DialogForm.i
+
+# target to preprocess a source file
+WindowObjects/DialogForm.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.i
+.PHONY : WindowObjects/DialogForm.cpp.i
+
+WindowObjects/DialogForm.s: WindowObjects/DialogForm.cpp.s
+
+.PHONY : WindowObjects/DialogForm.s
+
+# target to generate assembly for a file
+WindowObjects/DialogForm.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.s
+.PHONY : WindowObjects/DialogForm.cpp.s
+
 WindowObjects/DialogWindow.o: WindowObjects/DialogWindow.cpp.o
 
 .PHONY : WindowObjects/DialogWindow.o
@@ -540,6 +567,9 @@ help:
 	@echo "... Managers/TextureManager.o"
 	@echo "... Managers/TextureManager.i"
 	@echo "... Managers/TextureManager.s"
+	@echo "... WindowObjects/DialogForm.o"
+	@echo "... WindowObjects/DialogForm.i"
+	@echo "... WindowObjects/DialogForm.s"
 	@echo "... WindowObjects/DialogWindow.o"
 	@echo "... WindowObjects/DialogWindow.i"
 	@echo "... WindowObjects/DialogWindow.s"

@@ -1,9 +1,12 @@
 #include "MessangeBox.h"
 #include "../WindowObjects/DialogWindow.h"
 
-MessageBox::MessageBox(sf::RenderWindow *init_window):
+MessageBox::MessageBox(sf::RenderWindow *init_window, MessageBoxType type, std::string&& initial_text, sf::Vector2f size):
     window_(init_window),
-    text_box_(sf::Vector2f(18 * 30, 25)) {
+    size_(size),
+    type_(type),
+    text_box_(size),
+    user_text_(std::move(initial_text)) {
 
         if (!font_.loadFromFile("arial.ttf")) {
             throw std::runtime_error("It is not possible to load the font");
@@ -48,6 +51,9 @@ void MessageBox::setFocus(bool focus) {
 }
 
 void MessageBox::AcceptEvent(sf::Event &event, const sf::Vector2f &pos) {
+    if (type_ != MessageBoxType::Editable) {
+        return;
+    }
     if (event.type == sf::Event::MouseButtonPressed) {
         setFocus(contains(pos));
     } else if (event.type == sf::Event::TextEntered && isFocused()) {
@@ -81,6 +87,18 @@ void MessageBox::outputTextConstructor() {
     output_text_.setFillColor(sf::Color::Black);
     output_text_.setCharacterSize(20);
     output_text_.setPosition(text_box_.getPosition());
+    output_text_.setString(user_text_);
+    if (type_ == MessageBoxType::NonEditable) {
+        alignOutputText();
+    }
+}
+
+void MessageBox::alignOutputText() {
+    sf::FloatRect rect = output_text_.getGlobalBounds();
+    sf::Vector2f rect_centre = sf::Vector2f(rect.left + rect.width / 2, rect.top + rect.height / 2);
+    output_text_.setOrigin(rect_centre);
+    sf::Vector2f button_centre = sf::Vector2f(size_.x / 2, size_.y / 2);
+    output_text_.setPosition(button_centre);
 }
 
 void MessageBox::draw(sf::RenderTarget &target, sf::RenderStates states) const {

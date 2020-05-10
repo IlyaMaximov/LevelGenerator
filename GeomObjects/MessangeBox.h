@@ -5,9 +5,15 @@
 #include <SFML/Graphics.hpp>
 #include "WindowObj.h"
 
+enum class MessageBoxType {
+    Editable,
+    NonEditable
+};
+
 class MessageBox : public WindowObj {
 public:
-    explicit MessageBox(sf::RenderWindow* init_window);
+    explicit MessageBox(sf::RenderWindow* init_window = nullptr, MessageBoxType = MessageBoxType::Editable,
+            std::string&& initial_text = "", sf::Vector2f size = sf::Vector2f(540, 25));
 
     sf::FloatRect getLocalBounds() const;
     sf::Vector2f getSize() const;
@@ -26,8 +32,11 @@ private:
 
     void textBoxConstructor();
     void outputTextConstructor();
+    void alignOutputText();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
+    sf::Vector2f size_;
+    MessageBoxType type_;
     std::string user_text_ = "";
     sf::Font font_;
     sf::Text output_text_;

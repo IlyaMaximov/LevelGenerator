@@ -147,6 +147,12 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>
