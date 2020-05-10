@@ -1,6 +1,6 @@
-#include "SpaceManager.h"
+#include "LayoutManager.h"
 
-SpaceManager::SpaceManager(size_t width, size_t height) :
+LayoutManager::LayoutManager(size_t width, size_t height) :
         desktop_width_(width),
         desktop_height_(height),
         guard_width_(desktop_width_ / 40),
@@ -13,7 +13,7 @@ SpaceManager::SpaceManager(size_t width, size_t height) :
         button_height_((map_height_ - minimap_width_ - 2 * guard_height_ - palette_height_ - 2 * guard_button_) / 3) {}
 
 
-sf::Vector2f SpaceManager::getPos(GeomObjType obj) const {
+sf::Vector2f LayoutManager::getPos(GeomObjType obj) const {
     switch (obj) {
         case GeomObjType::Map :
             return sf::Vector2f(guard_width_, guard_height_);
@@ -34,7 +34,7 @@ sf::Vector2f SpaceManager::getPos(GeomObjType obj) const {
 }
 
 
-sf::Vector2f SpaceManager::getSize(GeomObjType obj) const  {
+sf::Vector2f LayoutManager::getSize(GeomObjType obj) const  {
     switch (obj) {
         case GeomObjType::Map :
             return sf::Vector2f(map_width_, map_height_);

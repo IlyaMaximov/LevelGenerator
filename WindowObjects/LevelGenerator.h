@@ -2,7 +2,7 @@
 #define LEVELGENERATOR_LEVELGENERATOR_H
 
 #include <SFML/Graphics.hpp>
-#include "../Managers/SpaceManager.h"
+#include "../Managers/LayoutManager.h"
 #include "../Managers/EventManager.h"
 #include "../Managers/TextureManager.h"
 #include "../GeomObjects/TileMap.h"
@@ -38,7 +38,7 @@ private:
 
     sf::Vector2f size_;
     TextureManager* texture_manager_;
-    SpaceManager space_manager_;
+    LayoutManager space_manager_;
     bool init_click_manager_;
     EventManager* click_manager_;
     TileMap map_;

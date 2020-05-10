@@ -1,5 +1,5 @@
-#ifndef LEVELGENERATOR_SPACEMANAGER_H
-#define LEVELGENERATOR_SPACEMANAGER_H
+#ifndef LEVELGENERATOR_LAYOUTMANAGER_H
+#define LEVELGENERATOR_LAYOUTMANAGER_H
 
 #include <SFML/Graphics.hpp>
 
@@ -13,14 +13,14 @@ enum class GeomObjType {
 };
 
 
-class SpaceManager {
+class LayoutManager {
 public:
-    explicit SpaceManager(size_t width = sf::VideoMode::getDesktopMode().width,
-                          size_t height = sf::VideoMode::getDesktopMode().height);
-    SpaceManager(const SpaceManager& ) = delete;
-    SpaceManager(SpaceManager&& ) = delete;
-    SpaceManager& operator=(SpaceManager& ) = delete;
-    SpaceManager& operator=(SpaceManager&& ) = delete;
+    explicit LayoutManager(size_t width = sf::VideoMode::getDesktopMode().width,
+                           size_t height = sf::VideoMode::getDesktopMode().height);
+    LayoutManager(const LayoutManager& ) = delete;
+    LayoutManager(LayoutManager&& ) = delete;
+    LayoutManager& operator=(LayoutManager& ) = delete;
+    LayoutManager& operator=(LayoutManager&& ) = delete;
 
     [[nodiscard]] sf::Vector2f getPos(GeomObjType obj) const;
     [[nodiscard]] sf::Vector2f getSize(GeomObjType obj) const;
@@ -38,4 +38,4 @@ private:
     const size_t button_height_;
 };
 
-#endif //LEVELGENERATOR_SPACEMANAGER_H
+#endif //LEVELGENERATOR_LAYOUTMANAGER_H

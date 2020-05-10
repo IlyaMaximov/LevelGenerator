@@ -258,6 +258,33 @@ GeomObjects/TileMap.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.s
 .PHONY : GeomObjects/TileMap.cpp.s
 
+Managers/DialogLayoutForm.o: Managers/DialogLayoutForm.cpp.o
+
+.PHONY : Managers/DialogLayoutForm.o
+
+# target to build an object file
+Managers/DialogLayoutForm.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o
+.PHONY : Managers/DialogLayoutForm.cpp.o
+
+Managers/DialogLayoutForm.i: Managers/DialogLayoutForm.cpp.i
+
+.PHONY : Managers/DialogLayoutForm.i
+
+# target to preprocess a source file
+Managers/DialogLayoutForm.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.i
+.PHONY : Managers/DialogLayoutForm.cpp.i
+
+Managers/DialogLayoutForm.s: Managers/DialogLayoutForm.cpp.s
+
+.PHONY : Managers/DialogLayoutForm.s
+
+# target to generate assembly for a file
+Managers/DialogLayoutForm.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.s
+.PHONY : Managers/DialogLayoutForm.cpp.s
+
 Managers/EventManager.o: Managers/EventManager.cpp.o
 
 .PHONY : Managers/EventManager.o
@@ -285,6 +312,33 @@ Managers/EventManager.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s
 .PHONY : Managers/EventManager.cpp.s
 
+Managers/LayoutManager.o: Managers/LayoutManager.cpp.o
+
+.PHONY : Managers/LayoutManager.o
+
+# target to build an object file
+Managers/LayoutManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o
+.PHONY : Managers/LayoutManager.cpp.o
+
+Managers/LayoutManager.i: Managers/LayoutManager.cpp.i
+
+.PHONY : Managers/LayoutManager.i
+
+# target to preprocess a source file
+Managers/LayoutManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.i
+.PHONY : Managers/LayoutManager.cpp.i
+
+Managers/LayoutManager.s: Managers/LayoutManager.cpp.s
+
+.PHONY : Managers/LayoutManager.s
+
+# target to generate assembly for a file
+Managers/LayoutManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.s
+.PHONY : Managers/LayoutManager.cpp.s
+
 Managers/MouseStatus.o: Managers/MouseStatus.cpp.o
 
 .PHONY : Managers/MouseStatus.o
@@ -311,33 +365,6 @@ Managers/MouseStatus.s: Managers/MouseStatus.cpp.s
 Managers/MouseStatus.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.s
 .PHONY : Managers/MouseStatus.cpp.s
-
-Managers/SpaceManager.o: Managers/SpaceManager.cpp.o
-
-.PHONY : Managers/SpaceManager.o
-
-# target to build an object file
-Managers/SpaceManager.cpp.o:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o
-.PHONY : Managers/SpaceManager.cpp.o
-
-Managers/SpaceManager.i: Managers/SpaceManager.cpp.i
-
-.PHONY : Managers/SpaceManager.i
-
-# target to preprocess a source file
-Managers/SpaceManager.cpp.i:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.i
-.PHONY : Managers/SpaceManager.cpp.i
-
-Managers/SpaceManager.s: Managers/SpaceManager.cpp.s
-
-.PHONY : Managers/SpaceManager.s
-
-# target to generate assembly for a file
-Managers/SpaceManager.cpp.s:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.s
-.PHONY : Managers/SpaceManager.cpp.s
 
 Managers/TextureManager.o: Managers/TextureManager.cpp.o
 
@@ -498,15 +525,18 @@ help:
 	@echo "... GeomObjects/TileMap.o"
 	@echo "... GeomObjects/TileMap.i"
 	@echo "... GeomObjects/TileMap.s"
+	@echo "... Managers/DialogLayoutForm.o"
+	@echo "... Managers/DialogLayoutForm.i"
+	@echo "... Managers/DialogLayoutForm.s"
 	@echo "... Managers/EventManager.o"
 	@echo "... Managers/EventManager.i"
 	@echo "... Managers/EventManager.s"
+	@echo "... Managers/LayoutManager.o"
+	@echo "... Managers/LayoutManager.i"
+	@echo "... Managers/LayoutManager.s"
 	@echo "... Managers/MouseStatus.o"
 	@echo "... Managers/MouseStatus.i"
 	@echo "... Managers/MouseStatus.s"
-	@echo "... Managers/SpaceManager.o"
-	@echo "... Managers/SpaceManager.i"
-	@echo "... Managers/SpaceManager.s"
 	@echo "... Managers/TextureManager.o"
 	@echo "... Managers/TextureManager.i"
 	@echo "... Managers/TextureManager.s"

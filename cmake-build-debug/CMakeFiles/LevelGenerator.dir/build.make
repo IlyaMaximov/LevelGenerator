@@ -187,18 +187,18 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.cpp -o CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.s
 
-CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
-CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o: ../Managers/SpaceManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.cpp
+CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
+CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o: ../Managers/LayoutManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.cpp
 
-CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.cpp > CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.i
+CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.cpp > CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.i
 
-CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.cpp -o CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.s
+CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.cpp -o CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.s
 
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o: ../Managers/TextureManager.cpp
@@ -226,6 +226,19 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.cpp -o CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.s
 
+CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
+CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../Managers/DialogLayoutForm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp
+
+CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp > CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.i
+
+CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp -o CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.s
+
 # Object files for target LevelGenerator
 LevelGenerator_OBJECTS = \
 "CMakeFiles/LevelGenerator.dir/main.cpp.o" \
@@ -238,9 +251,10 @@ LevelGenerator_OBJECTS = \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o" \
-"CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o" \
+"CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o" \
-"CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o"
+"CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o" \
+"CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o"
 
 # External object files for target LevelGenerator
 LevelGenerator_EXTERNAL_OBJECTS =
@@ -255,12 +269,13 @@ LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o
-LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o
+LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o
+LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/build.make
 LevelGenerator: CMakeFiles/LevelGenerator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable LevelGenerator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable LevelGenerator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LevelGenerator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

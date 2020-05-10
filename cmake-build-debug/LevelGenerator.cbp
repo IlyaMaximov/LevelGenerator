@@ -117,22 +117,28 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.cpp">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h">
-			<Option target="LevelGenerator"/>
-		</Unit>
-		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.cpp">
-			<Option target="LevelGenerator"/>
-		</Unit>
-		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.cpp">

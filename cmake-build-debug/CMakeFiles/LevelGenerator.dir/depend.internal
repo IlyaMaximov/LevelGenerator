@@ -36,8 +36,8 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
+ /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
- /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
@@ -46,6 +46,9 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o
+ /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp
+ /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
@@ -55,6 +58,9 @@ CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o
+ /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.cpp
+ /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.h
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
@@ -62,9 +68,6 @@ CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.cpp
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
-CMakeFiles/LevelGenerator.dir/Managers/SpaceManager.cpp.o
- /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.cpp
- /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.cpp
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
@@ -86,8 +89,8 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
+ /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
- /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.cpp
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
@@ -102,8 +105,8 @@ CMakeFiles/LevelGenerator.dir/main.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
+ /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
- /home/ilya/CLionProjects/LevelGenerator/Managers/SpaceManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h

@@ -4,7 +4,7 @@
 #include <vector>
 #include "Button.h"
 #include "../Managers/TextureManager.h"
-#include "../Managers/SpaceManager.h"
+#include "../Managers/LayoutManager.h"
 #include "../Managers/EventManager.h"
 
 class Palette : public sf::Drawable, public sf::Transformable {
