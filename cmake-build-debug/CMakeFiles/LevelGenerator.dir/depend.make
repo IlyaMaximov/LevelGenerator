@@ -76,6 +76,14 @@ CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/TextureMan
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o: ../Managers/TextureManager.cpp
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o: ../Managers/TextureManager.h
 
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../GeomObjects/Button.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../GeomObjects/MessangeBox.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../GeomObjects/TileMap.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../GeomObjects/WindowObj.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../Managers/DialogLayoutForm.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../Managers/EventManager.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../Managers/MouseStatus.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../WindowObjects/DialogForm.cpp
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../WindowObjects/DialogForm.h
 
@@ -111,10 +119,12 @@ CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/Minimap.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/Palette.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/TileMap.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../GeomObjects/WindowObj.h
+CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/DialogLayoutForm.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/EventManager.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/LayoutManager.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/DialogForm.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/LevelGenerator.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/NotificationWindow.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../main.cpp

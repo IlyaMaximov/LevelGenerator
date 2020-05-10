@@ -19,6 +19,10 @@ public:
 
     using DialogRow = std::vector<WindowObj*>;
 
+    sf::Vector2f getSize() const {
+        return size_;
+    }
+
     void addQuestion(std::string&& request_text, MessageBox* response) {
         auto request = new MessageBox(nullptr, MessageBoxType::NonEditable, std::move(request_text));
         dialog_rows_.push_back({request, response});

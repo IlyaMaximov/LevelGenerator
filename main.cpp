@@ -1,6 +1,7 @@
 #include <iostream>
 #include "WindowObjects/LevelGenerator.h"
 #include "WindowObjects/NotificationWindow.h"
+#include "WindowObjects/DialogForm.h"
 
 std::vector<std::pair<TextureName, sf::IntRect>> get_marking() {
     std::vector<std::pair<TextureName, sf::IntRect>> data(4);
@@ -10,6 +11,22 @@ std::vector<std::pair<TextureName, sf::IntRect>> get_marking() {
     }
     return data;
 }
+
+//int main() {
+//    size_t window_width = 1300;
+//    size_t window_height = 800;
+//    sf::VideoMode size = sf::VideoMode(window_width, window_height);
+//    try {
+//        DialogForm dialog_form("Questionnaire");
+//        DialogLayoutForm layout_form(sf::Vector2f(1300, 800));
+//        dialog_form.setLayout(layout_form);
+//        dialog_form.run();
+//    } catch (std::exception& e) {
+//        std::cout << e.what() << std::endl;
+//        exit(1);
+//    }
+//    return 0;
+//}
 
 
 int main() {

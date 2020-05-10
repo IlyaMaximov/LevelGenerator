@@ -56,6 +56,16 @@ SFML/Graphics.hpp
 iostream
 -
 
+/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
+iostream
+-
+cstdarg
+-
+../GeomObjects/MessangeBox.h
+/home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+../GeomObjects/Button.h
+/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
+
 /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
 ../GeomObjects/Button.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
@@ -84,6 +94,14 @@ utility
 iostream
 -
 
+/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
+SFML/Graphics.hpp
+/home/ilya/CLionProjects/LevelGenerator/WindowObjects/SFML/Graphics.hpp
+../Managers/EventManager.h
+/home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
+../Managers/DialogLayoutForm.h
+/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
+
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
 SFML/Graphics.hpp
 -
@@ -111,4 +129,6 @@ WindowObjects/LevelGenerator.h
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
 WindowObjects/NotificationWindow.h
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
+WindowObjects/DialogForm.h
+/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
 
