@@ -24,6 +24,14 @@ sf::Vector2f MessageBox::getSize() const {
     return text_box_.getSize();
 }
 
+void MessageBox::setSize(const sf::Vector2f& size) {
+    size_ = size;
+    text_box_.setSize(size);
+    if (type_ == MessageBoxType::NonEditable) {
+        alignOutputText();
+    }
+}
+
 std::string MessageBox::getUserText() const {
     return user_text_;
 }
@@ -94,7 +102,7 @@ void MessageBox::outputTextConstructor() {
 }
 
 void MessageBox::alignOutputText() {
-    sf::FloatRect rect = output_text_.getGlobalBounds();
+    sf::FloatRect rect = output_text_.getLocalBounds();
     sf::Vector2f rect_centre = sf::Vector2f(rect.left + rect.width / 2, rect.top + rect.height / 2);
     output_text_.setOrigin(rect_centre);
     sf::Vector2f button_centre = sf::Vector2f(size_.x / 2, size_.y / 2);

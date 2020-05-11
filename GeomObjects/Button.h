@@ -15,17 +15,18 @@ class Button : public WindowObj {
 
 public:
 
-    explicit Button(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager,
+    explicit Button(sf::Vector2f pos, sf::Vector2f sizes, TextureManager* manager = nullptr,
         TextureName texture = TextureName::Emptiness, const sf::Color& color = sf::Color::White);
     ~Button() override = default;
 
     sf::Vector2f getPos() const;
-    sf::Vector2f getSize() const;
+    sf::Vector2f getSize() const override;
+    void setSize(const sf::Vector2f&) override;
     sf::FloatRect getLocalBounds() const;
     TextureName getTextureName() const;
     void setName(const std::string& name);
     void AcceptEvent(sf::Event&, const sf::Vector2f &scale) override;
-    virtual void click() = 0;
+    virtual void click() {};
 
 private:
 

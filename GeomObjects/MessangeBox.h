@@ -16,7 +16,8 @@ public:
             std::string&& initial_text = "", sf::Vector2f size = sf::Vector2f(540, 25));
 
     sf::FloatRect getLocalBounds() const;
-    sf::Vector2f getSize() const;
+    sf::Vector2f getSize() const override;
+    void setSize(const sf::Vector2f&) override;
     std::string getUserText() const;
 
     bool isFocused() const;

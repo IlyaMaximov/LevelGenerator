@@ -13,7 +13,7 @@ public:
         TextureManager* texture_manager, std::vector<TextureName>&& info = {});
 
     sf::Vector2f getPos() const;
-    sf::Vector2f getSize() const;
+    sf::Vector2f getSize() const override;
     sf::Vector2u getTileSize() const;
     sf::Vector2u getSizeInTiles() const;
     sf::FloatRect getLocalBounds() const;

@@ -7,14 +7,15 @@
 
 class DialogForm : public sf::RenderWindow {
 public:
-    explicit DialogForm(const std::string& form_name, sf::Vector2f size = sf::Vector2f(1300, 800),
+    explicit DialogForm(const std::string& form_name, const DialogLayoutForm& layout,
             EventManager* click_manager = nullptr):
 
-        sf::RenderWindow(sf::VideoMode(size.x, size.y), form_name,
+        sf::RenderWindow(sf::VideoMode(layout.getSize().x, layout.getSize().y), form_name,
                          sf::Style::Titlebar|sf::Style::Close, sf::ContextSettings(0, 0, 8)),
-        size_(size),
+        size_(layout.getSize()),
         init_click_manager_(click_manager == nullptr),
-        click_manager_(init_click_manager_ ? new EventManager() : click_manager) {
+        click_manager_(init_click_manager_ ? new EventManager() : click_manager),
+        window_objects_(layout.getObjects()) {
 
             if (!font_.loadFromFile("arial.ttf")) {
                 throw std::runtime_error("It is not possible to load the font");
@@ -34,10 +35,6 @@ public:
         }
     }
 
-    void setLayout(const DialogLayoutForm& layout) {
-        setSize(static_cast<sf::Vector2u>(layout.getSize()));
-    }
-
     void EnterPressed(MessageBox* message_box) {
 
     }
@@ -54,7 +51,9 @@ public:
             }
             clear(sf::Color(240, 240, 240));
 
-            /////////////////////////////////////////////
+            for (auto window_obj: window_objects_) {
+                draw(*window_obj);
+            }
             display();
         }
     }
@@ -67,12 +66,11 @@ private:
         setPosition(sf::Vector2i(x_centre, y_centre));
     }
 
-  //  void fontSizeNormalize();
-
     bool close_window_ = false;
     bool init_click_manager_ = false;
 
-    const sf::Vector2u size_;
+    std::vector<WindowObj*> window_objects_;
+    sf::Vector2u size_;
     sf::Font font_;
     EventManager* click_manager_;
 };

@@ -41,6 +41,13 @@ sf::Vector2f Button::getPos() const {
     return pos_;
 }
 
+void Button::setSize(const sf::Vector2f& size) {
+    size_ = size;
+    sprite_.setSize(size_);
+    alignName();
+    fontSizeNormalize();
+}
+
 sf::Vector2f Button::getSize() const {
     return size_;
 }

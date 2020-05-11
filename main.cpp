@@ -17,9 +17,13 @@ std::vector<std::pair<TextureName, sf::IntRect>> get_marking() {
 //    size_t window_height = 800;
 //    sf::VideoMode size = sf::VideoMode(window_width, window_height);
 //    try {
-//        DialogForm dialog_form("Questionnaire");
-//        DialogLayoutForm layout_form(sf::Vector2f(1300, 800));
-//        dialog_form.setLayout(layout_form);
+//        DialogLayoutForm layout_form(sf::Vector2f(1300, 300));
+//        auto* a = new Button({0, 0}, {0, 0}, nullptr, TextureName::Emptiness, sf::Color(152, 251, 152));
+//        auto* b = new Button({0, 0}, {0, 0}, nullptr, TextureName::Emptiness, sf::Color(152, 251, 152));
+//        layout_form.addChoiceQuestion("kekkos", 0);
+//        layout_form.addChoiceQuestion("kekkos", 0);
+//        layout_form.addChoiceQuestion("kekkos", 2, a, b);
+//        DialogForm dialog_form("Questionnaire", layout_form);
 //        dialog_form.run();
 //    } catch (std::exception& e) {
 //        std::cout << e.what() << std::endl;
