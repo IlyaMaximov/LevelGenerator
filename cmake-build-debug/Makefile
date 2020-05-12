@@ -150,32 +150,32 @@ GeomObjects/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.s
 .PHONY : GeomObjects/Button.cpp.s
 
-GeomObjects/MessangeBox.o: GeomObjects/MessangeBox.cpp.o
+GeomObjects/InputBox.o: GeomObjects/InputBox.cpp.o
 
-.PHONY : GeomObjects/MessangeBox.o
+.PHONY : GeomObjects/InputBox.o
 
 # target to build an object file
-GeomObjects/MessangeBox.cpp.o:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o
-.PHONY : GeomObjects/MessangeBox.cpp.o
+GeomObjects/InputBox.cpp.o:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o
+.PHONY : GeomObjects/InputBox.cpp.o
 
-GeomObjects/MessangeBox.i: GeomObjects/MessangeBox.cpp.i
+GeomObjects/InputBox.i: GeomObjects/InputBox.cpp.i
 
-.PHONY : GeomObjects/MessangeBox.i
+.PHONY : GeomObjects/InputBox.i
 
 # target to preprocess a source file
-GeomObjects/MessangeBox.cpp.i:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.i
-.PHONY : GeomObjects/MessangeBox.cpp.i
+GeomObjects/InputBox.cpp.i:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.i
+.PHONY : GeomObjects/InputBox.cpp.i
 
-GeomObjects/MessangeBox.s: GeomObjects/MessangeBox.cpp.s
+GeomObjects/InputBox.s: GeomObjects/InputBox.cpp.s
 
-.PHONY : GeomObjects/MessangeBox.s
+.PHONY : GeomObjects/InputBox.s
 
 # target to generate assembly for a file
-GeomObjects/MessangeBox.cpp.s:
-	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.s
-.PHONY : GeomObjects/MessangeBox.cpp.s
+GeomObjects/InputBox.cpp.s:
+	$(MAKE) -f CMakeFiles/LevelGenerator.dir/build.make CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.s
+.PHONY : GeomObjects/InputBox.cpp.s
 
 GeomObjects/Minimap.o: GeomObjects/Minimap.cpp.o
 
@@ -540,9 +540,9 @@ help:
 	@echo "... GeomObjects/Button.o"
 	@echo "... GeomObjects/Button.i"
 	@echo "... GeomObjects/Button.s"
-	@echo "... GeomObjects/MessangeBox.o"
-	@echo "... GeomObjects/MessangeBox.i"
-	@echo "... GeomObjects/MessangeBox.s"
+	@echo "... GeomObjects/InputBox.o"
+	@echo "... GeomObjects/InputBox.i"
+	@echo "... GeomObjects/InputBox.s"
 	@echo "... GeomObjects/Minimap.o"
 	@echo "... GeomObjects/Minimap.i"
 	@echo "... GeomObjects/Minimap.s"

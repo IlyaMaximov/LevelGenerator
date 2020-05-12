@@ -4,7 +4,7 @@
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.cpp
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
@@ -12,10 +12,10 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
-CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o
+CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.cpp
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
@@ -30,7 +30,7 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.cpp
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
@@ -48,7 +48,7 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp
@@ -56,7 +56,7 @@ CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.cpp
@@ -78,7 +78,7 @@ CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
@@ -89,7 +89,7 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
@@ -99,7 +99,7 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
@@ -115,7 +115,7 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
- /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.h
+ /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Minimap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h

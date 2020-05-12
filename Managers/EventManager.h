@@ -3,7 +3,7 @@
 
 #include "../GeomObjects/Button.h"
 #include "../GeomObjects/TileMap.h"
-#include "../GeomObjects/MessangeBox.h"
+#include "../GeomObjects/InputBox.h"
 #include "MouseStatus.h"
 
 class EventManager {

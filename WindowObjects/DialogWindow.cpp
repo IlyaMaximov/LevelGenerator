@@ -25,7 +25,7 @@ DialogWindow::~DialogWindow() {
     }
 }
 
-void DialogWindow::EnterPressed(MessageBox* box) {
+void DialogWindow::EnterPressed(InputBox* box) {
     *user_response_ = std::move(box->getUserText());
     if (!user_response_->empty()) {
         close_window_ = true;

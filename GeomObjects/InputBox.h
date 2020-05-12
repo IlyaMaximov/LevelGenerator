@@ -1,18 +1,18 @@
-#ifndef LEVELGENERATOR_MESSANGEBOX_H
-#define LEVELGENERATOR_MESSANGEBOX_H
+#ifndef LEVELGENERATOR_INPUTBOX_H
+#define LEVELGENERATOR_INPUTBOX_H
 
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "WindowObj.h"
 
-enum class MessageBoxType {
+enum class InputBoxType {
     Editable,
     NonEditable
 };
 
-class MessageBox : public WindowObj {
+class InputBox : public WindowObj {
 public:
-    explicit MessageBox(sf::RenderWindow* init_window = nullptr, MessageBoxType = MessageBoxType::Editable,
+    explicit InputBox(sf::RenderWindow* init_window = nullptr, InputBoxType = InputBoxType::Editable,
             std::string&& initial_text = "", sf::Vector2f size = sf::Vector2f(540, 25));
 
     sf::FloatRect getLocalBounds() const;
@@ -37,7 +37,7 @@ private:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
     sf::Vector2f size_;
-    MessageBoxType type_;
+    InputBoxType type_;
     std::string user_text_ = "";
     sf::Font font_;
     sf::Text output_text_;

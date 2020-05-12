@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o"
-  "CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o"
+  "CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o"
   "CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o"
   "CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o"
   "CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o"

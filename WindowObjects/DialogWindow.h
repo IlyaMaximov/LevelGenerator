@@ -14,7 +14,7 @@ public:
     DialogWindow& operator=(DialogWindow&& ) = delete;
     ~DialogWindow() override;
 
-    void EnterPressed(MessageBox*);
+    void EnterPressed(InputBox*);
     void run();
 
 private:
@@ -31,7 +31,7 @@ private:
     const sf::Vector2u size_;
     sf::Font font_;
     sf::Text query_;
-    MessageBox message_box_;
+    InputBox message_box_;
     std::string* user_response_;
     EventManager* click_manager_;
 };

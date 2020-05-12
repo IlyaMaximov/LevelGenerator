@@ -148,18 +148,18 @@ CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.cpp -o CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.s
 
-CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
-CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o: ../GeomObjects/MessangeBox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp
+CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
+CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../GeomObjects/InputBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/LevelGenerator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o -c /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.cpp
 
-CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp > CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.i
+CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.cpp > CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.i
 
-CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/GeomObjects/MessangeBox.cpp -o CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.s
+CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.cpp -o CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.s
 
 CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o: CMakeFiles/LevelGenerator.dir/flags.make
 CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o: ../GeomObjects/Minimap.cpp
@@ -261,7 +261,7 @@ LevelGenerator_OBJECTS = \
 "CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o" \
-"CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o" \
+"CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o" \
 "CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o" \
@@ -280,7 +280,7 @@ LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o
-LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/MessangeBox.cpp.o
+LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o
 LevelGenerator: CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o

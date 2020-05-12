@@ -35,7 +35,7 @@ public:
         }
     }
 
-    void EnterPressed(MessageBox* message_box) {
+    void EnterPressed(InputBox* message_box) {
 
     }
 

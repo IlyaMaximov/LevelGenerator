@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <cstdarg>
-#include "../GeomObjects/MessangeBox.h"
+#include "../GeomObjects/InputBox.h"
 #include "../GeomObjects/Button.h"
 
 class DialogLayoutForm {
@@ -59,13 +59,13 @@ public:
         return window_objects;
     };
 
-    void addQuestion(std::string&& request_text, MessageBox* response) {
-        auto request = new MessageBox(nullptr, MessageBoxType::NonEditable, std::move(request_text));
+    void addQuestion(std::string&& request_text, InputBox* response) {
+        auto request = new InputBox(nullptr, InputBoxType::NonEditable, std::move(request_text));
         dialog_rows_.push_back({request, response});
     }
 
     void addChoiceQuestion(std::string&& question_text, int n, ...) {
-        auto request = new MessageBox(nullptr, MessageBoxType::NonEditable, std::move(question_text));
+        auto request = new InputBox(nullptr, InputBoxType::NonEditable, std::move(question_text));
         dialog_rows_.push_back({request});
         va_list args_list;
         va_start(args_list, n);
