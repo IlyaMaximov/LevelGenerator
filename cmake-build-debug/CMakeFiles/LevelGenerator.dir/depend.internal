@@ -140,12 +140,10 @@ CMakeFiles/LevelGenerator.dir/main.cpp.o
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
  /home/ilya/CLionProjects/LevelGenerator/GeomObjects/WindowObj.h
- /home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
  /home/ilya/CLionProjects/LevelGenerator/Managers/TextureManager.h
- /home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
  /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
  /home/ilya/CLionProjects/LevelGenerator/YAML API/DefiningYAMLFormat.h

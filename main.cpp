@@ -1,10 +1,7 @@
 #include <iostream>
 #include "WindowObjects/LevelGenerator.h"
 #include "WindowObjects/NotificationWindow.h"
-#include "YAML API/DefiningYAMLFormat.h"
-#include "WindowObjects/DialogForm.h"
 #include <yaml-cpp/yaml.h>
-#include <fstream>
 
 std::vector<std::pair<TextureName, sf::IntRect>> get_marking() {
     std::vector<std::pair<TextureName, sf::IntRect>> data(4);

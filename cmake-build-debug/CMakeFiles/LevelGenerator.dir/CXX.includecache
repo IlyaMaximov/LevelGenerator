@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.cpp
-Button.h
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
-../Managers/MouseStatus.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
-../WindowObjects/DialogWindow.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
-../WindowObjects/NotificationWindow.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
-fstream
--
-
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
 SFML/Graphics.hpp
 -
@@ -29,12 +17,6 @@ TileMap.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
 cassert
 -
-
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.cpp
-InputBox.h
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
-../WindowObjects/DialogWindow.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
 
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
 iostream
@@ -48,10 +30,6 @@ WindowObj.h
 TileMap.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
 
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.cpp
-Palette.h
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h
-
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Palette.h
 vector
 -
@@ -63,12 +41,6 @@ Button.h
 /home/ilya/CLionProjects/LevelGenerator/Managers/LayoutManager.h
 ../Managers/EventManager.h
 /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
-
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.cpp
-TileMap.h
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
-../Managers/MouseStatus.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
 
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/TileMap.h
 SFML/Graphics.hpp
@@ -85,24 +57,6 @@ SFML/Graphics.hpp
 -
 iostream
 -
-
-/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.cpp
-DialogLayoutForm.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
-
-/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
-iostream
--
-cstdarg
--
-../GeomObjects/InputBox.h
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/InputBox.h
-../GeomObjects/Button.h
-/home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
-
-/home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.cpp
-EventManager.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
 
 /home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
 ../GeomObjects/Button.h
@@ -118,10 +72,6 @@ MouseStatus.h
 SFML/Graphics.hpp
 -
 
-/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.cpp
-MouseStatus.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
-
 /home/ilya/CLionProjects/LevelGenerator/Managers/MouseStatus.h
 ../GeomObjects/Button.h
 /home/ilya/CLionProjects/LevelGenerator/GeomObjects/Button.h
@@ -135,32 +85,6 @@ utility
 -
 iostream
 -
-
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.cpp
-DialogForm.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
-
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
-SFML/Graphics.hpp
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/SFML/Graphics.hpp
-../Managers/EventManager.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
-../Managers/DialogLayoutForm.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/DialogLayoutForm.h
-
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.cpp
-DialogWindow.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
-
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogWindow.h
-SFML/Graphics.hpp
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/SFML/Graphics.hpp
-../Managers/EventManager.h
-/home/ilya/CLionProjects/LevelGenerator/Managers/EventManager.h
-
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.cpp
-LevelGenerator.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
 
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
 SFML/Graphics.hpp
@@ -203,12 +127,6 @@ WindowObjects/LevelGenerator.h
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/LevelGenerator.h
 WindowObjects/NotificationWindow.h
 /home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h
-YAML API/DefiningYAMLFormat.h
-/home/ilya/CLionProjects/LevelGenerator/YAML API/DefiningYAMLFormat.h
-WindowObjects/DialogForm.h
-/home/ilya/CLionProjects/LevelGenerator/WindowObjects/DialogForm.h
 yaml-cpp/yaml.h
--
-fstream
 -
 
