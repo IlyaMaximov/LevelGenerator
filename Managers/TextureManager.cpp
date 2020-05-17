@@ -1,5 +1,23 @@
 #include "TextureManager.h"
 
+std::string getTextureName(TextureName tex_name) {
+    switch (tex_name) {
+        case TextureName::Grass:
+    return "Grass";
+        case TextureName::River:
+    return "River";
+        case TextureName::Tree:
+    return "Tree";
+        case TextureName::Gravel:
+    return "Gravel";
+        case TextureName::Emptiness:
+    return "Emptiness";
+        default:
+    return "";
+    }
+}
+
+
 TextureManager::TextureManager(const std::string &file, const std::vector<std::pair<TextureName, sf::IntRect>> &data) :
     texture_file_(file) {
         if (!all_textures_.loadFromFile(file)) {
@@ -34,4 +52,12 @@ const sf::Texture* TextureManager::getTexture(TextureName name) const {
 
 const sf::Texture* TextureManager::getAllTextures() const {
     return &all_textures_;
+}
+
+std::string TextureManager::getTextureFile() const {
+    return texture_file_;
+}
+
+size_t TextureManager::getTextureCnt() const {
+    return data_.size();
 }

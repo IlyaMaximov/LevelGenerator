@@ -14,6 +14,8 @@ enum class TextureName {
     Emptiness
 };
 
+std::string getTextureName(TextureName tex_name);
+
 class TextureManager {
 public:
 
@@ -27,6 +29,8 @@ public:
     sf::IntRect getRect(TextureName name) const;
     const sf::Texture* getTexture(TextureName name) const;
     const sf::Texture* getAllTextures() const;
+    std::string getTextureFile() const;
+    size_t getTextureCnt() const;
 
 private:
 

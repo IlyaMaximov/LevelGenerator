@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "../Managers/TextureManager.h"
+#include "../YAML API/DefiningYAMLFormat.h"
 #include "TileMap.h"
 #include <cassert>
 
@@ -68,8 +69,9 @@ private:
 
 class ClearButton : public Button {
 public:
-    explicit ClearButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
-            Button(pos, sizes, nullptr, TextureName::Emptiness, color),
+    explicit ClearButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map,
+                const sf::Color& color = sf::Color::White, TextureManager* tex_manager = nullptr):
+            Button(pos, sizes, tex_manager, TextureName::Emptiness, color),
             map_(map) {
         setName("Clear Map");
     };
@@ -84,8 +86,9 @@ private:
 
 class SaveButton : public Button {
 public:
-    explicit SaveButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
-        Button(pos, sizes, nullptr, TextureName::Emptiness, color),
+    explicit SaveButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map,
+            const sf::Color& color = sf::Color::White, TextureManager* tex_manager = nullptr):
+        Button(pos, sizes, tex_manager, TextureName::Emptiness, color),
         map_(map) {
         setName("Save Map");
     };
@@ -101,8 +104,9 @@ private:
 
 class OpenButton : public Button {
 public:
-    explicit OpenButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map, const sf::Color& color = sf::Color::White):
-        Button(pos, sizes, nullptr, TextureName::Emptiness, color),
+    explicit OpenButton(sf::Vector2f pos, sf::Vector2f sizes, TileMap* map,
+            const sf::Color& color = sf::Color::White, TextureManager* tex_manager = nullptr):
+        Button(pos, sizes, tex_manager, TextureName::Emptiness, color),
         map_(map) {
         setName("Open Map");
     };
@@ -111,7 +115,7 @@ public:
     void click() override;
 
 private:
-    static void read_error(std::string&& error_description, std::ifstream&) ;
+    static void read_error(std::string&& error_description);
     void read_map(std::string&& file_name) const;
 
     TileMap* map_ = nullptr;

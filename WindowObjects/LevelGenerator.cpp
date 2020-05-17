@@ -19,15 +19,15 @@ LevelGenerator::LevelGenerator(const std::vector<TextureName> &palette_landscape
         sf::Color button_color = sf::Color(135, 206, 250);
         Button* save_button = new SaveButton(space_manager_.getPos(GeomObjType::SaveButton),
                                              space_manager_.getSize(GeomObjType::SaveButton),
-                                             &map_, button_color);
+                                             &map_, button_color, texture_manager_);
 
         Button* open_button = new OpenButton(space_manager_.getPos(GeomObjType::OpenButton),
                                              space_manager_.getSize(GeomObjType::OpenButton),
-                                             &map_, button_color);
+                                             &map_, button_color, texture_manager_);
 
         Button* clear_button = new ClearButton(space_manager_.getPos(GeomObjType::RunButton),
                                                space_manager_.getSize(GeomObjType::RunButton),
-                                               &map_, button_color);
+                                               &map_, button_color, texture_manager_);
 
         service_buttons_ = {save_button, open_button, clear_button};
 

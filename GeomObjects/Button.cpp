@@ -152,51 +152,49 @@ void ClearButton::click() {
 ///////////////////////////////////////////////////
 
 void SaveButton::write_map(std::string &&file_name) const {
-    std::ofstream file_out(file_name);
-    file_out << map_->getSizeInTiles().x << " " << map_->getSizeInTiles().y << '\n';
-    for (size_t i = 0; i < map_->getSizeInTiles().y; ++i) {
-        for (size_t j = 0; j < map_->getSizeInTiles().x; ++j) {
-            file_out << static_cast<size_t>(map_->getTextureName(i, j)) << " ";
-        }
-        file_out << "\n";
+    if (file_name.size() < 6 || file_name.substr(file_name.size() - 5, 5) != ".yaml") {
+        NotificationWindow popup_window("Expected yaml file format");
+        popup_window.run();
+        return;
     }
+
+    std::ofstream file_out(file_name);
+
+    for (int i = 0; i < manager_->getTextureCnt(); ++i) {
+        auto tex_name = static_cast<TextureName>(i);
+        file_out << YAML::Node(LandscapeObject(tex_name, manager_->getTextureFile(), manager_->getRect(tex_name)));
+        if (i != manager_->getTextureCnt() - 1) {
+            file_out << "\n---\n";
+        }
+    }
+    file_out << "\n...\n";
+
+    file_out << YAML::Node(SchematicMap(map_->getSizeInTiles().x, map_->getSizeInTiles().y, map_->getInfo()));
+    file_out << "\n...";
     file_out.close();
 }
 
-void OpenButton::read_error(std::string &&error_description, std::ifstream& file_in) {
+void OpenButton::read_error(std::string &&error_description) {
     NotificationWindow popup_window(std::move(error_description));
     popup_window.run();
-    file_in.close();
 }
 
 void OpenButton::read_map(std::string &&file_name) const {
     sf::Vector2u map_size;
     if (file_name.empty()) {
         return;
-    }
-    std::ifstream file_in(file_name);
-    if (!file_in.is_open()) {
-        read_error("This file doesn't exist", file_in);
+    } else if (file_name.size() < 6 || file_name.substr(file_name.size() - 5, 5) != ".yaml") {
+        NotificationWindow popup_window("Expected yaml file format");
+        popup_window.run();
         return;
     }
 
-    file_in >> map_size.x >> map_size.y;
-    if (map_->getSizeInTiles() != map_size) {
-        read_error("Mismatch in map sizes", file_in);
+    std::vector<YAML::Node> info_blocks = YAML::LoadAllFromFile(file_name);
+    auto map = info_blocks.back().as<SchematicMap>();
+    if (map_->getSizeInTiles() != sf::Vector2u(map.width, map.height)) {
+        read_error("Mismatch in map sizes");
         return;
+    } else {
+        map_->loadInfo(std::move(map.tiles));
     }
-
-    std::vector<TextureName> map_info(map_size.x * map_size.y);
-    for (size_t i = 0; i < map_size.x * map_size.y; ++i) {
-        if (file_in.eof() || file_in.bad()) {
-            read_error("Map's tiles reading error", file_in);
-            return;
-        }
-
-        int texture_id;
-        file_in >> texture_id;
-        map_info[i] = static_cast<TextureName>(texture_id);
-    }
-    map_->loadInfo(std::move(map_info));
-    file_in.close();
 }

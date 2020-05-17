@@ -11,6 +11,8 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/MouseStatus.
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../WindowObjects/DialogWindow.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../WindowObjects/NotificationWindow.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/Button.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../GeomObjects/InputBox.cpp
@@ -21,6 +23,8 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../Managers/EventManag
 CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../WindowObjects/DialogWindow.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/InputBox.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o: ../GeomObjects/Minimap.cpp
 CMakeFiles/LevelGenerator.dir/GeomObjects/Minimap.cpp.o: ../GeomObjects/Minimap.h
@@ -38,6 +42,8 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o: ../Managers/EventManage
 CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o: ../Managers/LayoutManager.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/Palette.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../GeomObjects/TileMap.cpp
@@ -45,6 +51,8 @@ CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../GeomObjects/TileMap.
 CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../GeomObjects/WindowObj.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/GeomObjects/TileMap.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../GeomObjects/InputBox.h
@@ -53,6 +61,8 @@ CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../GeomObjects/Wi
 CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../Managers/DialogLayoutForm.cpp
 CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../Managers/DialogLayoutForm.h
 CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/Managers/DialogLayoutForm.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../GeomObjects/InputBox.h
@@ -62,6 +72,8 @@ CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../Managers/EventMana
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../Managers/EventManager.h
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/Managers/EventManager.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o: ../Managers/LayoutManager.cpp
 CMakeFiles/LevelGenerator.dir/Managers/LayoutManager.cpp.o: ../Managers/LayoutManager.h
@@ -72,6 +84,8 @@ CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../GeomObjects/WindowO
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/MouseStatus.cpp
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/MouseStatus.h
 CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../Managers/TextureManager.h
+CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/Managers/MouseStatus.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o: ../Managers/TextureManager.cpp
 CMakeFiles/LevelGenerator.dir/Managers/TextureManager.cpp.o: ../Managers/TextureManager.h
@@ -86,6 +100,8 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../Managers/MouseS
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../WindowObjects/DialogForm.cpp
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../WindowObjects/DialogForm.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogForm.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../GeomObjects/InputBox.h
@@ -96,6 +112,8 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../Managers/Mous
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../WindowObjects/DialogWindow.cpp
 CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../WindowObjects/DialogWindow.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/DialogWindow.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/Button.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../GeomObjects/InputBox.h
@@ -109,6 +127,8 @@ CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../Managers/Mo
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../WindowObjects/LevelGenerator.cpp
 CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../WindowObjects/LevelGenerator.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/WindowObjects/LevelGenerator.cpp.o: ../YAML\ API/Specialized\ Classes.h
 
 CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o: ../WindowObjects/NotificationWindow.cpp
 CMakeFiles/LevelGenerator.dir/WindowObjects/NotificationWindow.cpp.o: ../WindowObjects/NotificationWindow.h
@@ -127,5 +147,7 @@ CMakeFiles/LevelGenerator.dir/main.cpp.o: ../Managers/TextureManager.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/DialogForm.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/LevelGenerator.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../WindowObjects/NotificationWindow.h
+CMakeFiles/LevelGenerator.dir/main.cpp.o: ../YAML\ API/DefiningYAMLFormat.h
+CMakeFiles/LevelGenerator.dir/main.cpp.o: ../YAML\ API/Specialized\ Classes.h
 CMakeFiles/LevelGenerator.dir/main.cpp.o: ../main.cpp
 

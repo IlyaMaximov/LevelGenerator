@@ -171,6 +171,12 @@
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/WindowObjects/NotificationWindow.h">
 			<Option target="LevelGenerator"/>
 		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/YAML API/DefiningYAMLFormat.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
+		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/YAML API/Specialized Classes.h">
+			<Option target="LevelGenerator"/>
+		</Unit>
 		<Unit filename="/home/ilya/CLionProjects/LevelGenerator/main.cpp">
 			<Option target="LevelGenerator"/>
 		</Unit>
